@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    TO DO:
+
+    -Finish Filling Notes
+    
+    -Footer
+        -Languages and libraries used.
+        -Airman Mitchel Carson
+        -Links to Email, linkedIn and Github
+    
+    -Bootstrap:
+        -Menu that holds all the topics; can be access anywhere on the page
+        
+    -Javascript:
+        -Need Internet:
+        -Host on Firebase
+        -Push to Github  
+        -Add Authentication
+
+    -3D Animation
+        -Anything, would just like to implement a new technology.
+        
+    Templates:
+            <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+    -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security+ Certification Study Guide</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>TIA Comp Security + Certification Exam Study Guide</h1>
+        <p>Developed by: Airman Mitchel Carson</p>
+    </header>
+    <div id="topicDiv">
+        <h2><a id="topic"></a>Topics</h2>
+        <a href="#introToNetworkDevices">Introduction to Network Devices</a>
+        <br>
+        <a href="#secureNetworkAdministrationConcepts">Secure Network Administration Concepts</a>
+        <br>
+        <a href="#cloudConcepts">Cloud Concepts</a>
+        <br>
+        <a href="#secureNetworkDesignElementsComponents">Secure Network Design Elements and Components</a>
+        <br>
+        <a href="#commonNetworkProtocols">Common Network Protocols</a>
+        <br>
+        <a href="#wirelessSecurityConsiderations">Wireless Security Considerations</a>
+        <br>
+        <a href="#riskRelatedConcepts">Risk Related Concepts</a>
+        <br>
+        <a href="#integratingDataSystemsThridParties">Integrating Data and Systems with Third Parties</a>
+        <br>
+        <a href="#riskMitigationStrategies">Risk Mitigation Strategies</a>
+        <br>
+        <a href="#basicForensicProcedures">Basic Forensic Procedures</a>
+        <br>
+        <a href="#incidentResponseConcepts">Incident Response Concepts</a>
+        <br>
+        <a href="#securityRelatedAwarenessTraining">Security Related Awareness and Training</a>
+        <br>
+        <a href="#physicalSecurityEnviornmentalControls">Physical Security and Enviornmental Controls</a>
+        <br>
+        <a href="#disasterRecoveryConcepts">Disaster Recovery Concepts</a>
+        <br>
+        <a href="#riskManagementBestPractices">Risk Management Best Practices</a>
+        <br>
+        <a href="#goalsOfSecurityControls">Goals of Security Controls</a>
+        <br>
+        <a href="#typesOfMalware">Types of Malware</a>
+        <br>
+        <a href="#summaryOfTypesOfAttacks">A Summary of Types of Attacks</a>
+        <br>
+        <a href="#summaryOfSocialEngineeringAttacks">A Summary of Social Engineering Attacks</a>
+        <br>
+        <a href="#summaryOfWirelessAttacks">A Summary of Wireless Attacks</a>
+        <br>
+        <a href="#typesOfApplicationAttacks">Types of Application Attacks</a>
+        <br>
+        <a href="#securityEnhancementTechniques">Security Enhancement Techniques</a>
+        <br>
+        <a href="#overviewOfSecurityAssessmentTools">Overview of Security Assessment Tools</a>
+        <br>
+        <a href="#vulnerabilityScanningVsPenTesting">Vulnerability Scanning vs Pen Testing</a>
+        <br>
+        <a href="#applicationSecurityControlsAndTechniques">Application Security Controls and Techniques</a>
+        <br>
+        <a href="#mobileSecurityConceptsAndTechnologies">Mobile Security Concepts and Technologies</a>
+        <br>
+        <a href="#solutionsUsedtoEstablishHostSecurity">Solutions Used to Establish Host Security</a>
+        <br>
+        <a href="#controlsToEnsureDataSecurity">Controls to Ensure Data Security</a>
+        <br>
+        <a href="#mitigatingRisksInALternativeEnviornments">Mitigating Risks in Alternative Enviornments</a>
+        <br>
+        <a href="#summaryOfAuthenticationServices">Summary of Authentication Services</a>
+        <br>
+        <a href="#authenticationAndAuthorizationBasics">Authentication and Authorization Basics</a>
+        <br>
+        <a href="#securityControlsForAccountManagement">Security Controls for Account Management</a>
+        <br>
+        <a href="#introductionToCryptography">Introduction to Cryptopgraphy</a>
+        <br>
+        <a href="#cryptographicMethods">Cryptographic Methods</a>
+        <br>
+        <a href="#introductionToPublicKeyInfrastructure">Introduction to Public Key Infrastructure</a>
+        <br>
+    </div>
+
+    <div class="topic" id="introToNetworkDevicesDiv">
+        <div class="topicTitle">
+            <a id="introToNetworkDevices"></a>
+            <h3> Introduction to Network Devices</h3>
+        </div>
+        <div class="subTopic">Open Systems Interconnection Model
+            <p class="body">
+                7-Layered approach to networking. Security can be placed in between each layer.
+                The Open Systems Interconnection (OSI) model was developed as a way
+                to help disparate computing systems communicate with each other.
+            </p>
+            <!-- Insert Image of 7-Layer network scheme. -->
+        </div>
+        <br>
+
+        <div class="subTopic">Basic Network Devices
+            <div class="content">Switch
+                <p class="body">A switch utilizes an application specific integrated circuit (ASIC) chip and is
+                    considered
+                    a Layer 2 OSI device.
+                    The ASIC chip has specific programing that allows the switch to learn when a device is on the
+                    network and which ports it is
+                    connected to via that device's Layer 2 MAC address.<br>
+                    Managed switches allow security to be placed on the individual switch ports creating amore secure
+                    networking enviornment. <br>
+                    A switch will only communicate with local network devices.
+                </p>
+            </div>
+            <div class="content">Wireless Access Point (WAP)
+                <p class="body">A WAP is a specific type of network bridge that connects (bridges) wireless network
+                    segments with
+                    wired network segments and is considered a Layer 2 OSI device.<br>
+                    The most common type of WAP bridges 802.11 wireless network segments with 802.3 ethernet network
+                    segments.<br>
+                    All WAP's are capable of utilizing encryption to help ensure a secure networking envionrnment.<br>
+                    A WAP will only communicate with local network devices.</p>
+            </div>
+            <div class="content">Multilayer Swtch (MLS)
+                <p class="body">An MLS provides normal Layer 2 network switchig services, but it will also proved Layer
+                    3
+                    or higher OSI model
+                    services. <br>
+                    The most common MLS is a Layer 3 switch. <br>
+                    It not only untilizes and ASIC chi for switching, but the ASIC chip is also programmed to handle
+                    routing functions.
+                    This allows the device to communicate and pass data to non-local network devices</p>
+            </div>
+            <div class="content">Router
+                <p class="body">The Router is the most common network device for connecting different networks together
+                    utilizing the OSI
+                    model's Layer 3 logical network information. <br>
+                    The router uses software programming for decision making, as compared to the switch;s use of an ASIC
+                    chip. <br>
+                    Firewalls and access control lists (ACLs) are commonly placed on routers to help secure networks.
+                </p>
+            </div>
+            <div class="content">Firewalls
+                <p class="body">A firewall can be placed on routers or hosts (software based) or an be its own device
+                    (network appliance)<br>
+                    It functions at multiple layers of the OSI model (Usually 2,3,4,and 7)<br>
+                    It blocks packets from entering or leaving the network via stateless inspection and stateful
+                    inspection. <br>
+                    Stateless Inspections: the fire wall will examine every packet against a set of rules. Once the
+                    packet matches a rule, the rule
+                    is enforced, and the specified action is taken.<br>
+                    Stateful Inspections: The firewall will only examine the state of the connection between networks.
+                    Specifically, when a connection
+                    is made from an internal network to an external, the firewall will not exammine any packets
+                    returning from the external connection.
+                    As a general rule, external connections are not allowed to be initiated with the internal
+                    network.<br>
+                    It is the first line of defense in protecting the internal network from outside threats. (consider
+                    it the police force of the network)
+                </p>
+            </div>
+            <div class="content">Load Balancer
+                <p class="body">A load balancer may also be called a content switch or content filter. <br>
+                    Can be implemented to increase the security of the network by limiting or filtering the content that
+                    is allowed. <br>
+                    A network appliance that is used to load balance between multiple hosts that contain the same
+                    data-spreading out the
+                    workload for greater efficiency.<br>
+                    Commonly used to distribute the requests (workloads) to a server farm among the various servers,
+                    helping to ensure
+                    that no single server gets overloaded.
+                </p>
+            </div>
+            <div class="content"> Proxy Server
+                <p class="body">A proxy server is an appliance that requests resources on behalf of client machines.<br>
+                    It is often used to retrieve resources from outside untrusted networks on behalf of the requesting
+                    client. <br>
+                    It hides and protects the requesting client. <br>
+                    It can also be utilized to filter allowed content. <br>
+                    It can increase network performance by caching commonly requested web pages.
+                </p>
+            </div>
+        </div>
+        <div class="subTopic">Layered Security Concept
+            <div class="content">Layered Security Concept
+                <p class="body"> Modern networks are composed of multiple layers of devices and applications, which can
+                    lead to issues with security.<br> While this does make the issue of security more complex, it has
+                    the
+                    benefit of supporting the concept of layered security (which is also called security in depth.) <br>
+                    Each layer or device can contain its own security methods. This means that if a breach occurs in one
+                    area of the network, the rest of the network will remain secure (hopefully). <br>It is a best
+                    practice to use a layered approach when implementing network security.<br> Many security devices are
+                    triggered by a specific action occuring (e.g., a network packet crosses an interface).<br> This
+                    creates a situation in which those devices are only capable of reacting to perceived threats.<br> On
+                    the other hand, some devices are capable of application awareness. This feature allows security
+                    devices to make better decisions based on which applications are alled to operate on the network and
+                    which applications are not allowed to cross through it. This is another layer that can be added to
+                    the network's security. Some devices that may be application aware include firewalls, proxy servers,
+                    and network intrusion detection/prevention systems.
+                </p>
+            </div>
+        </div>
+        <div class="subTopic">Basic Network Devices II
+            <div class="content">VPN Concentrator (Virtual Private Network)
+                <p class="body">A virtual private network (VPN) concentrator will facilitate multiple secure VPN
+                    connections to a network. <br> The type of VPN connection to the network will determine what
+                    tunneling and encryption the VPN concentrator will implement. Most concentrators can function at
+                    multiple layers of the OSI model (2, 3, 7). <br> Outside of Internet transactions (which use SSL,
+                    VPN connections at Layer 7), most concentrators will function at the network layer (Layer 3) of the
+                    OSI model, providing IPsec encryption through a secure tunnel.
+                </p>
+            </div>
+            <div class="content">Network Intrusion Detection System (NIDS)
+                <p class="body">A NIDS is a passive system designed to identify when a network breach or attack against
+                    the network is occuring.<br> Usually designed to inform a network administrator when a breach or
+                    atack has occured through log files, SMS, and/or and email notification.<br>A NIDS cannot prevent or
+                    stop a breach or attack on its own. <br> It receives a copy of all traffic and evaluates it against
+                    a set of standards.<br>Signature Based: evaluates network traffic for known malware or attack
+                    signatures.<br>Anomaly Based: evaluates network traffic for suspicious changes. <br> Policy Based:
+                    evaluates network traffic against a specific declared security policy. <br> Heuristic Based:
+                    evaluates network traffic against past network behavior (looks for changes in expected patterns).
+                    <br>A NIDS deployed at the host level is called a Host Based Intrusion Detection System (HIDS).
+                </p>
+            </div>
+            <div class="content">Network Intrusion Prevention System (NIPS)
+                <p class="body">Network Based Intrusion Prevention System (NIPS).<br> A NIPS is an active system
+                    designed to stop a breach or atack from succeeding in damaging the network. <br>Usually designed to
+                    perform an action or set of acions to stop malicious activity.<br> Will inform a network admin
+                    through the use of log files, SMS, and/or email notification. <br> All traffic on the network
+                    segment flows through the NIPS to either enter or leave the segment.<br> Like the NIDS, all traffic
+                    is evaluated against a set of standards. <br> The best placement on the network is between a router
+                    (with a firewall) and the destination network segment. <br> It is programmed to make an active
+                    response to the situation.<br>Block the offering IP address.<br>Close down the vulnerable interface.
+                    <br>Terminate the network session.<br>Redirect the attack.<br> Perform additional actions.
+                </p>
+            </div>
+            <div class="content">Unified Threat Management (UTM) Security Appliance
+                <p class="body">A possible all-in-one security solution.<br>Contains firewall features.<br>Contains IDS
+                    feature.<br>Contains anti-virus and anti-malware features.<br>Contains anti-spam features.<br>Can
+                    perform content and URL(website) filtering.<br>A specifically designed piece of hardware with an
+                    integrated software package-creating a closed system.<br>Positive aspects provides multiple security
+                    features in a central location, simplifies management of security, and eases updating
+                    security.<br>Negative aspects; concentrates security in a single system or location, which can
+                    create a single point of failure for both the network and its security.
+                </p>
+            </div>
+        </div>
+        <div class="subTopic">Spam Filter
+            <div class="content">Spam
+                <p class="body">In most cases, spam is defined as unsolicited bulk email (UBE), or junk email. The
+                    spammer (the person sending the spam) is hoping that the recipient will buy a product or
+                    service.<br>While in most cases the receiving of spam isn't a security threat, it is considered a
+                    waste of resources.
+                </p>
+            </div>
+            <div class="content">Filters for Spam
+                <p class="body">Various filters can be put in place-usually on an SMTP server-to reduce the amount of
+                    spam that is received.<br>Real-Time Blacklist (RBL): a subscription service that provides a list of
+                    known IP adresses of spam hosts, which then allows them to be blocked.<br>Connection Filter:
+                    prohibiting a list of specific IP addresses from connecting to a SMTP server. <br>Recipient Filter:
+                    Blocking messages sent to a particular recipient.<br>Sender Filter: Blocking messages sent from a
+                    particular entity.<br>Sender ID filer: allows an SMTP server to review the Sender Policy Framework
+                    (SPF) record of the sender in DNS. If the sending SMTP server is listed the message is accepted.
+                </p>
+            </div>
+        </div>
+        <div class="subTopic">Basic Network Devices III
+            <div class="content">Web Security Gateway
+                <p class="body">A system designed to protect networks from malicious content that is on the
+                    internet<br>It can be used to filter out prhibited content.<br>It can be used to scan for malicious
+                    code.<br>These systems can also be used as a data loss prevention (DLP) measure.<br> Outgoing
+                    content is scanned. If sensitive content is discovered in the scan, it is not allowed to leave the
+                    network.
+                </p>
+            </div>
+            <div class="content">Protocol Analyzer
+                <p class="body">Often called a packet sniffer.<br>Examines the network behavior at a very basic level;
+                    they allow for the examinationof the indivvidual packets of data.<br> Can be used to see what is
+                    consuming network resources (e.g is a broadcast storm ovvuring or is an interface going bad?)<br>Can
+                    be used to identify a network breach or attack.<br> Can be used to study methodsused to create a
+                    network breach.<br> Wireshark is a common protocol analyzer.
+                </p>
+            </div>
+            <div class="content">Web Application Firewall
+                <p class="body">An application layer (Layer 7) firewall that is used to control HTTP traffic that is
+                    allowed to reach the web server.<br>This allows for greater inspection and control of messages and
+                    traffic that is destined to a network's web servers. They are configured to protect the servers from
+                    common attacks.<br>They differ from normal network firewalls in that they are only concerned about
+                    what is attempting to reach the web server. Network firewalls, on the other hand, attempt to protect
+                    the network as a whole.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="topic" id="secureNetworkAdministrationConceptsDiv">
+        <div class="topicTitle">
+            <a id="secureNetworkAdministrationConcepts"></a>
+            <h3> Secure Network Administration Concepts</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="secureNetworkAdministrationConceptsDiv">
+        <div class="topicTitle">
+            <a id="secureNetworkAdministrationConcepts"></a>
+            <h3> Cloud Concepts</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="cloudConceptsDiv">
+        <div class="topicTitle">
+            <a id="cloudConcepts"></a>
+            <h3> Secure Network Desgn Elements and Components</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="commonNetworkProtocolsDiv">
+        <div class="topicTitle">
+            <a id="commonNetworkProtocols"></a>
+            <h3> Common Network Protocols</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="wirelessSecurityConsiderationsDiv">
+        <div class="topicTitle">
+            <a id="wirelessSecurityConsiderations"></a>
+            <h3> Wireless Security Considerations</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="riskRelatedConceptsDiv">
+        <div class="topicTitle">
+            <a id="riskRelatedConcepts"></a>
+            <h3> Risk Related Concepts</h3>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="integratingDataSystemsThridPartiesDiv">
+        <div class="topicTitle">
+            <a id="integratingDataSystemsThridParties"></a>
+            <h3> Integrating Data and Sysmtems with Third Parties</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="riskMitigationStrategiesDiv">
+        <div class="topicTitle">
+            <a id="riskMitigationStrategies"></a>
+            <h3> Risk Mitigation Strategies</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="basicForensicProceduresDiv">
+        <div class="topicTitle">
+            <a id="basicForensicProcedures"></a>
+            <h3> Basic Forensic Procedures</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="incidentResponseConceptsDiv">
+        <div class="topicTitle">
+            <a id="incidentResponseConcepts"></a>
+            <h3> Incident Response Concepts</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="securityRelatedAwarenessTrainingDiv">
+        <div class="topicTitle">
+            <a id="securityRelatedAwarenessTraining"></a>
+            <h3> Security Related Awareness and Training</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="physicalSecurityEnviornmentalControlsDiv">
+        <div class="topicTitle">
+            <a id="physicalSecurityEnviornmentalControls"></a>
+            <h3> Physical Security and Enviornmental Controls</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="disasterRecoveryConceptsDiv">
+        <div class="topicTitle">
+            <a id="disasterRecoveryConcepts"></a>
+            <h3> Disaster Recovery Concepts</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="riskManagementBestPracticesDiv">
+        <div class="topicTitle">
+            <a id="riskManagementBestPractices"></a>
+            <h3> Risk Management Best Practices</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="goalsOfSecurityControlsDiv">
+        <div class="topicTitle">
+            <a id="goalsOfSecurityControls"></a>
+            <h3> Goals of Security Controls</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="typesOfMalwareDiv">
+        <div class="topicTitle">
+            <a id="typesOfMalware"></a>
+            <h3> Types of Malware</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="summaryOfTypesOfAttacksDiv">
+        <div class="topicTitle">
+            <a id="summaryOfTypesOfAttacks"></a>
+            <h3> A Summary of Types of Attacks</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="summaryOfSocialEngineeringAttacksDiv">
+        <div class="topicTitle">
+            <a id="summaryOfSocialEngineeringAttacks"></a>
+            <h3> A Summary of Social Engineering Attacks</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="summaryOfWirelessAttacksDiv">
+        <div class="topicTitle">
+            <a id="summaryOfWirelessAttacks"></a>
+            <h3> A Summary of Wireless Attacks</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="typesOfApplicationAttacksDiv">
+        <div class="topicTitle">
+            <a id="typesOfApplicationAttacks"></a>
+            <h3> Types of Application Attacks</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="securityEnhancementTechniquesDiv">
+        <div class="topicTitle">
+            <a id="securityEnhancementTechniques"></a>
+            <h3> Security Enhancement Techniques</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="overviewOfSecurityAssessmentToolsDiv">
+        <div class="topicTitle">
+            <a id="overviewOfSecurityAssessmentTools"></a>
+            <h3> Overview of Security Assessment Tools</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="vulnerabilityScanningVsPenTestingDiv">
+        <div class="topicTitle">
+            <a id="vulnerabilityScanningVsPenTesting"></a>
+            <h3> Vulnerability Scanning vs Pen Testing</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="applicationSecurityControlsAndTechniquesDiv">
+        <div class="topicTitle">
+            <a id="applicationSecurityControlsAndTechniques"></a>
+            <h3> Application Security Controls and Techniques</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="mobileSecurityConceptsAndTechnologiesDiv">
+        <div class="topicTitle">
+            <a id="mobileSecurityConceptsAndTechnologies"></a>
+            <h3> Mobile Security Concepts and Technologies</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="solutionsUsedtoEstablishHostSecurityDiv">
+        <div>
+            <a id="solutionsUsedtoEstablishHostSecurity"></a>
+            <h3> Solutions Used to Establish Host Security</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="controlsToEnsureDataSecurityDiv">
+        <div class="topicTitle">
+            <a id="controlsToEnsureDataSecurity"></a>
+            <h3> Controls to Ensure Data Security</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="mitigatingRisksInALternativeEnviornmentsDiv">
+        <div class="topicTitle">
+            <a id="mitigatingRisksInALternativeEnviornments"></a>
+            <h3> Mitigating Risks in Alternative Enviornments</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="summaryOfAuthenticationServicesDiv">
+        <div class="topicTitle">
+            <a id="summaryOfAuthenticationServices"></a>
+            <h3> Summary of Authentication Services</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="authenticationAndAuthorizationBasicsDiv">
+        <div class="topicTitle">
+            <a id="authenticationAndAuthorizationBasics"></a>
+            <h3> Authentication and Authorization Basics</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="securityControlsForAccountManagementDiv">
+        <div class="topicTitle">
+            <a id="securityControlsForAccountManagement"></a>
+            <h3> Security Controls for Account Management</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="introductionToCryptographyDiv">
+        <div class="topicTitle">
+            <a id="introductionToCryptography"></a>
+            <h3> Introduction to Cryptopgraphy</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="cryptographicMethodsDiv">
+        <div class="topicTitle">
+            <a id="cryptographicMethods"></a>
+            <h3> Cryptographic Methods</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+
+    <div class="topic" id="introductionToPublicKeyInfrastructureDiv">
+        <div class="topicTitle">
+            <a id="introductionToPublicKeyInfrastructure"></a>
+            <h3> Introduction to Public Key Infrastructure</h3>
+        </div>
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <div class="subTopic">
+            <div class="content">
+                <p class="body">
+
+                </p>
+            </div>
+        </div>
+
+        <a href="#topic">Topics</a>
+    </div>
+</body>
+
+</html>
