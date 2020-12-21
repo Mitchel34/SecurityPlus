@@ -23,7 +23,7 @@
         -Anything, would just like to implement a new technology.
         
     Templates:
-            <div class="subTopic">
+        <div class="subTopic">
             <div class="content">
                 <p class="body">
 
@@ -326,22 +326,162 @@
                 </p>
             </div>
         </div>
-        <div class="subTopic">Integrating Data and Systems with Thrid Parties
-            <div class="content">Considerations of Integration
-                <p class="body">Risk Awareness: Always evalate the risks when thinking about integrating systems and
+        <div class="subTopic">Integrating Data and Systems with Third Parties:(Risks and Considerations)
+            <div class="content">Risks of Integration:
+                <p class="body">There are multiple reasons why systems and data may be integrated with third parties.
+                    The key is to know the risks. Systems and data may be required to be intedgrated because of a joint
+                    venture with another entity. When implementing a cloud computing soluction, there will be a need to
+                    integrate systems and data. In some cases, the need for integration is well known and intentional,
+                    while, in other cases, it may not even be recognized as happening. When people are using social
+                    media, they may actually be integrating company data with a third party. In all cases, there are
+                    risks, associated with integration of systems and data with third parties.
+                </p>
+            </div>
+            <div class="content">Risk Awareness:
+                <p class="body">Always evalate the risks when thinking about integrating systems and
                     data with third parties. Data may reside out of the control of the buisness. Network transmissions
                     may be vulnerable. The other side of the integration may not be secure. The third party may go out
-                    of buisiness.<br> Onboarding and offboarding of buisiness partners: Procedures and systems need to
-                    be put in place that will allow authorized people from the third party buisiness partner to access
-                    the appropriate systems and data --the onboarding process. Implementing an identity access
-                    management (IAM) system can help ease the burden. Procedures and systems also need to be put in
-                    poace to remove access once the partnership is terminated or authorized person leaves the buisness
-                    partner --the offboarding process.
-
+                    of buisiness.
+                </p>
+            </div>
+            <div class="content">Onboarding and Offboarding of Buisiness Partners:
+                <p class="body">Procedures and systems need to be put in place that will allow authorized people from
+                    the third party buisiness partner to access the appropriate systems and data --the onboarding
+                    process. Implementing an identity accessmanagement (IAM) system can help ease the burden. Procedures
+                    and systems also need to be put in place to remove access once the partnership is terminated or
+                    authorized person leaves the buisness partner --the offboarding process.
+                </p>
+            </div>
+            <div class="content">Interoperability Agreements:
+                <p class="body">
+                    If the risks of integration
+                    are deemed acceptable, some additional agreements should be created to help the process. Memorandum
+                    of understanding (MOU): A document that is created that establishes an agreement between two
+                    parties. Blanket purchase agreement(BPA): a document created and used to cover repetitive needs for
+                    products or services. Service level agreement (SLA): an agreement that specifies the guaranteed
+                    uptime of a system. Internet service agreement (ISA): specifies any data limits placed on an
+                    internet connection and should also contain a guarantee of the amount of uptime of the Internet
+                    connection.
+                </p>
+            </div>
+            <div class="content">Data Backups:
+                <p class="body">
+                    Cloud storage of data backups may be the best solution to off site
+                    storage for the backups-- mitigating the risk of data loss in the case of disaster. A risk
+                    associated with this is the loss of control of the data; all backups stored offsite should be
+                    encrypted.
+                </p>
+            </div>
+            <div class="content">Data Ownership:
+                <p class="body">
+                    There needs to be a clear understanding of data ownership before
+                    integration of systems and data is undertaken. Some third parties consider all data stroed on their
+                    systems as being their data -- no matter where it originated from.
+                </p>
+            </div>
+            <div class="content">Compliance and Performance Standards:
+                <p class="body">
+                    Reach all agreements with third parties carefully to ensure that what they offer
+                    and/or provide meets with the compliance standards that are required. In some cases, it is not only
+                    inappropiate to integrate data with a third party, it may actually be in violation of the
+                    law.
+                </p>
+            </div>
+            <div class="content">Follow Security Policies and Procedure:
+                <p class="body">
+                    In all cases of systems and data integration,
+                    security policies and procedures should be in place to proctect the integrity of the buisness's
+                    systems. At least one of the policies needs to define what is considered to be unauthorized sharing
+                    of data.
+                </p>
+            </div>
+            <div class="content">Social Media:
+                <p class="body">
+                    Social media represents a type of data integration that may be
+                    difficult to control. With the increased use of social media networks and applications, company data
+                    may not neccessarily be under control of the proper entities. Companies should strive to train
+                    personnel on what is appropriate to share on social media, and what should not be placed out in the
+                    open. It is possible for snesitive company information to be placed on the internet through the use
+                    of social media.
                 </p>
             </div>
         </div>
-
+        <div class="subTopic">Application Attacks I.
+            <div class="content">Application attacks defined:
+                <p class="body">Due to improvements in modern network security methods, hackers may not be able to
+                    easily exploit network resources. As these security improvements have developed, in many cases
+                    attackers have shifted their focus to application attacks. The hacker will focus on exploiting
+                    weaknesses in the software and operating systems that people use everyday. In many cases, the
+                    security used to protect software and from exploitation is not as robust as the security that is
+                    used to protect newtworks. A poorly developed application can often give the hacker Administrative
+                    control of a system if the exploit is executed properly.
+                </p>
+            </div>
+            <div class="content">Cross-Site Scripting (XSS) attack:
+                <p class="body">The attacker inserts script code into a form on a web page that gets submitted to the
+                    server. The server submits the scruipt code to another client system which the executes the script.
+                    XSS is often used to attack the database serviers that are used to support web pages.
+                </p>
+            </div>
+            <div class="content">SQL (Structured Query Language) Injection Attack:
+                <p class="body">SQL is a a common language used to manipulate databases. Most buisness and web
+                    applications use SQL to retrieve data from databases. To perform the attack, the hacker inserts SQL
+                    commands into the application, usually from an input field, knowing that the application will pass
+                    the command to the database application. The injected SQL co mmands will then modify the
+                    database (e.g., inserting new username and password for the hacker to use in further exploitation).
+                </p>
+            </div>
+            <div class="content">Buffer Overflow Attack:
+                <p class="body">The hacker sends more information to the application than the applications's memory
+                    buffer can handle --overlflowing the buffer. The additional information will often be placed in
+                    memory outside of the buffer. If the hacker can get the right information stored outside fo the
+                    buffer, he or she can execute code with adminstrative privilege.
+                </p>
+            </div>
+            <div class="content">Integer Overflow attack:
+                <p class="body">Similar to a Buffer Overflow Attack; but involves exploiting the mathematical functions
+                    of an application. When a mathematical function returns an integer larger than the memory space that
+                    has been allocated to receive it, applications often respond in unexpected ways; this represents a
+                    security issue.
+                </p>
+            </div>
+            <div class="content">Directory Traversal/Command Injection Attack:
+                <p class="body">A popular attack against web servers in which the hacker attempts to traverse the web
+                    servers's directories to the point where he or she can execute commands on the underlying operating
+                    system. The attacker manipulates the URL (Uniform Resource Locator) requests in order to move
+                    through the directories and get to a command prompt on the underlying OS.
+                </p>
+            </div>
+            <div class="content">LDAP (Lightweight Directory Access Protocol) Injection attack.
+                <p class="body">Uses the same principle as an SQL injection attack, but exploits LDAP calls instead of
+                    SQL commands.
+                </p>
+            </div>
+            <div class="content">XML (Extensible Markup Language) Injection attack.
+                <p class="body">Uses the same principle as the SQL and LDAP injection attacks, but exploits XML to
+                    modify the targeted application.
+                </p>
+            </div>
+            <div class="content">Unknown Vulnerabilities (Zero Day Attacks):
+                <p class="body">One of the largest threats that network security personnel face is the unkown
+                    vulnerability. Network and systems administrators exlpend a fair amount of effort protecting the
+                    assets under their control. They can do a good job of hardening their systems, but not a perfect
+                    job. The problem lies with zero day attacks. Zero day attacks take advatage of either new or very
+                    recently discovered vulnerabilities in applications, which means that networks and systems probably
+                    haven't yet been hardened against them. The unfortunate reality is that attacks keep changing and
+                    security experts must also be willing to adapt in order to keep pace.
+                </p>
+            </div>
+            <div class="content">Data Validation:
+                <p class="body">The best defense against application attacks begins with the application's developer.
+                    Most attacks against applications involve exploiting outside input to the applications. By using
+                    proper data validation techniques, application developers can stop most application attacks from
+                    succeeding. All data validation techniques should be thoroughly tested by the developer to ensure
+                    that they are effective. It is even advisable to have an unaffiliated person or organization attempt
+                    to bypass the validation techniques in order to increase the effectiveness of the testting.
+                </p>
+            </div>
+        </div>
     </div>
 
     <div class="topic" id="secureNetworkAdministrationConceptsDiv">
@@ -349,46 +489,89 @@
             <a id="secureNetworkAdministrationConcepts"></a>
             <h3> Secure Network Administration Concepts</h3>
         </div>
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
+        <div class="subTopic">Rule-Based Management
+            <div class="content">Rule-Based Management Defined:
+                <p class="body"> The implementation of rules at the technology level, used to create a secure network
+                    envionrnment. Rule-Based Management shoul dbe designed and tested to ensure that the rules function
+                    as expected.
+                </p>
+            </div>
+            <div class="content">Firewall Rules:
+                <p class="body">The firewall rules should be configured in such a way that only the required traffic is
+                    allowed to pass through. Whenever possible, the default rule should be to deny traffic. Exceptions
+                    are then created to allow the required traffic. The last rule on any firewall should be an implicit
+                    deny statement. Unless explicitly allowed the traffic is denued entry into the network.
 
                 </p>
             </div>
-        </div>
-
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+            <div class="content">Access Control List (ACL):
+                <p class="body">Should be implemented wherever possible. Firewall rules are often called ACL's. Files
+                    and folders can hace ACL's placed on them through the use of permissions. Routers can have two ACL's
+                    per networkk interface. One ACL is on the inbound side of the interface. The other is on the
+                    outboundj side of the interface. All ACL's end with an implicit deny statement. If not explicitly
+                    allowed in the ACL, the traffic or request is denied. Once created, the ACL shoul be tested for
+                    functionality to ensure that required actions are allowed and that non-required actions are not
+                    allowed.
                 </p>
             </div>
         </div>
-
-        <a href="#topic">Topics</a>
-    </div>
-
-    <div class="topic" id="secureNetworkAdministrationConceptsDiv">
-        <div class="topicTitle">
-            <a id="secureNetworkAdministrationConcepts"></a>
-            <h3> Cloud Concepts</h3>
-        </div>
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
+        <div class="subTopic">Additional Secure Network Administration Concepts:
+            <div class="content">Secure Router Configurationj
+                <p class="body">Locking the front door to the network. Put active ACL's in place. Disable default
+                    usernames and passowords. Require passwords for all access to the router whenever possible, use only
+                    secure protocols for access.
+                </p>
+            </div>
+            <div class="content">Port Security:
+                <p class="body">Locking the back door to the network. Enable security on all switch ports. This limmits
+                    the ability of an attacker to gain access through a switch. MAC filtering is the security method
+                    that is most commonly used.
+                </p>
+            </div>
+            <div class="content">Network Septeration:
+                <p class="body">Putting the eggs in more than one basket. Seperate and group network resources by
+                    function and security needs. This cn create more secure areas withink a network. Seperation can be
+                    achieved through VLAN management.
+                </p>
+            </div>
+            <div class="content">VLAN Management:
+                <p class="body">Keeping the fox out of then hen house. Change default management VLAN's. Proper VLAN
+                    management keeps network traffic where it belongs. To allow inter-VLAN communication, the traffic
+                    has to pass through a router.
+                </p>
+            </div>
+            <div class="content">Flood Guards:
+                <p class="body">Blocking the most common attacks. The most common network attack is the denial of
+                    service (DoS) attack. The atacker floods the network with traffic to block legitimate traffic. Flood
+                    guards can recognize the pattern and halt the attack before the damage is done.
+                </p>
+            </div>
+            <div class="content">Loop Protection:
+                <p class="body">Preventing unnecessary network traffic. Redundant routes can create routing loops.
+                    Routers use a time-to-live (TTL) value and slplit horizon to combat these. Redundant links on
+                    switches can also create loops. Spanning Tree Protocol (STP) will negarte the loops.
 
                 </p>
             </div>
-        </div>
-
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+            <div class="content">802.1X
+                <p class="body">Know exactly who has access to resourves. 802.1X is an authentication protocol used on
+                    wired and wireless netowrks. It requires users to authenticate against a central database before
+                    access to the network is granted.
+                </p>
+            </div>
+            <div class="content">Unified Threat Management:
+                <p class="body">Multiple security measures in one device. Unified threat management (UTM) is a possible
+                    all-in-one security solution. UTM systems provide multiple security functions (e.g., firewall and
+                    anitvirus) in a single network appliance.
+                </p>
+            </div>
+            <div class="content">Log Analysis:
+                <p class="body">Know what is happeningn all the time. Security, sytem, and application logs should be
+                    reviewed on a regular basis. All too often they are onlyreviewed after a problem has occured, when
+                    the signs were present in the log files all along.
                 </p>
             </div>
         </div>
-
         <a href="#topic">Topics</a>
     </div>
 
@@ -397,22 +580,169 @@
             <a id="cloudConcepts"></a>
             <h3> Secure Network Desgn Elements and Components</h3>
         </div>
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Cloud Classifications
+            <div class="content">Cloud Computing:
+                <p class="body">Cloud computing is where the resources on the network are not actually physical in
+                    nature. They are provided to the user virtually. This can lead to a very fluid and dynamic
+                    enviornment, as required resources are normally only provisioned as needed and are decommissioned
+                    once their use is completed. Most often, these vurtual resourves are not owned by the company that
+                    uses them, but are provided by a service provider. Whjile cloud computingis highly configurable and
+                    changeable, it does have some basic structures that are used in the classification of the type of
+                    cloud that is in use.
+                </p>
+            </div>
+            <div class="content">Public Cloud:
+                <p class="body">Systems can interact with services and devices within the public cloud and on public
+                    networks (e.g., the internet) and possibly other public clouds.
+                </p>
+            </div>
+            <div class="content">Private Cloud:
+                <p class="body">Systems only communicate with services and devices within the specified private cloud.
+                </p>
+            </div>
+            <div class="content">Hybrid Cloud:
+                <p class="body">Combines aspects of both the public and private cloud.
+                </p>
+            </div>
+            <div class="content">Community Cloud:
+                <p class="body">Cloud services used by private individuals, organizations, or groups that have a common
+                    interest.
                 </p>
             </div>
         </div>
-
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Types of Cloud Computing
+            <div class="content">Nature of Cloud Computing:
+                <p class="body">Due to the nature of cloud computing, it is very configurable to the needs and desires
+                    of the purchaser. Purchasers have many options beyond the type of could services (e.g., public or
+                    private) that they want to provision. They must also determine what type of service they are going
+                    to require --from the most basic to the highly complex (e.g., Saas or Paas).
+                </p>
+            </div>
+            <div class="content">Software as a Service (Saas):
+                <p class="body">The end user purchases the rights to use an application without the need to configure
+                    the vurtual servers that will deliver the application. It is usually delivered as a web application
+                    (opened and used from within a web browser).
+                </p>
+            </div>
+            <div class="content">Platform as a Service (PaaS):
+                <p class="body">The user is provided with a development platform for the creation of software packages,
+                    without the need to configure the virtual servers and infrastructure that delivers it.
+                </p>
+            </div>
+            <div class="content">Infrastructure as a Service (IaaS):
+                <p class="body">The end user is provided with access to virtual servers (configurable bu the customer)
+                    and other virtual network resources. Creates a highly configurable enviornment in which customers
+                    can create the resources and performance that they require. The end user supplies the software that
+                    is going to be used on the IaaS network.
+                </p>
+            </div>
+            <div class="content">Hybrid Cloud Infrastructure:
+                <p class="body">It is not uncommon for the type of cloud computing being utilized bu an organization to
+                    be a mix. Some departments may use IaaS, while a development team utilizes a PaaS only. Part of the
+                    advantage of cloud computing is only initializing resources as they are needed. In a private cloud
+                    situation, it is possible for the organization tha is using it to actually own the cloud resourves.
+                    If they do own the cloud resourves, they may have it on site, or they may pay to have the resources
+                    hosted off site.
+                </p>
+            </div>
+            <div class="content">Conservation of Resources:
+                <p class="body">Cloud computing can be a great method of conservingn company resources, but it also has
+                    several security considerations. When using hosting services, there is always the need to consider
+                    confidentiality. When the resources are out of physical control of the company, it may be difficult
+                    to control access to those resources. In somesituations --such as when a law requires a company to
+                    maintain physical control of the resources --cloud computing may be unacceptable. In addition to the
+                    physical control, there is also the problem of reliability and availability. The purchaser is having
+                    to rely upon the hosting service's ability to maintain system uptime and availability.
+                </p>
+            </div>
+            <div class="content">Cloud Computing Provider Selection:
+                <p class="body">Always perform due diligence research to ensure that the cloud provider is both
+                    reputable and reliable. As part of the research, it is also important to evaluate whether or not the
+                    resource is appropriate to be hosted (e.g., the owner is not required to maintain physical control
+                    of it).
                 </p>
             </div>
         </div>
+        <a href="#topic">Topics</a>
+    </div>
 
+    <div class="topic" id="secureNetworkDesignElementsComponentsDiv">
+        <div class="topicTitle">
+            <a id="secureNetworkDesignElementsComponents"></a>
+            <h3> Secure Network Design Elements and Components</h3>
+        </div>
+        <div class="subTopic">Defense in Depth
+            <div class="content">Defense in Depth Concept:
+                <p class="body">Due to the complexity of modern networks, malicious attackers have multiple avenues that
+                    they can use to breach network security. The same complexity also allows for security to be placed
+                    in multiple areas usingn different methods. By placing security at different levels and in different
+                    places, network administrators can increase the overall security posture of a network. This concept
+                    is known as defense in depth. Security should not just be placed in a single spot, as this creates a
+                    single point of failure. Security should be emplaced at multiple layes of the newwork, using a
+                    diversity of methods, in order to create an effectively hardened network.
+                </p>
+            </div>
+        </div>
+        <div class="subTopic">Elements and Components of Network Design
+            <div class="content">Demilitarized Zone (DMZ):
+                <p class="body">The DMZ is a specific area created --usually between two firewalls -- that allows
+                    outside access to network resources (e.g., a web server), while the internal network remains
+                    protected form outside traffic.
+                </p>
+            </div>
+            <div class="content">Network Address Translation(NAT):
+                <p class="body">NAT is a technique used to allow private IP addresses to be routed across, or through,
+                    and untrusted public network. The NAT device --usually a router-- assigns a public routable IP
+                    adress to a device that is requesting outside access. NAT has the added benefit of protecting the
+                    interal private network. The private network's IP addressing scheme is hidden from untrusted
+                    networks by the NAT enabled router.
+                </p>
+            </div>
+            <div class="content">Network Access Control (NAC):
+                <p class="body">NAC is a method of controlling who and what gains access to a wired or wireless network.
+                    In most cases, NAC usses a combination of credentials based security (e.g., 802.1X) and some form of
+                    posture assessment for a device attempting to log on to the network. A posture assessment considers
+                    the state of the requesting device. The device must meet a set of minimum standards before it is
+                    allowed access to the network. Common device assessments include the type of device, operating
+                    system, patch level of the operating system, the presence of anti-malware software and how up to
+                    date it is.
+                </p>
+            </div>
+            <div class="content">Virtualization:
+                <p class="body"> Virtualization is the process of creating virtual resources instead of actual
+                    resources. Hardware, operating systems, and complete networks can be virtualized. A security
+                    advantage to virtualization is that, if the virtual resource is compromised, it can easily be taken
+                    down, recoverd, fixed, and then brough back online.
+                </p>
+            </div>
+            <div class="content">Subnetting:
+                <p class="body">Subnetting is the logical division of a network --a single block of IP addresses-- into
+                    discrete seperate networks. Can be done to match the physical structure of the network (e.g., the
+                    network only requires enough addresses for 100 nodes, not 254). Can be done to increase the security
+                    of the network by segmenting resources by needs and security level.
+                </p>
+            </div>
+            <div class="content">Segmentation of Resources:
+                <p class="body">Security can be increased by segmenting a network based on resources and security needs
+                    through the implementation of virtual local area networks (VLANs). The segmentation can be done
+                    based on user groups (e.g., a VLAN for the sales department and another one for human resources).
+                    the segmentation can be done based on user groups (e.g., a VLAN for the sales department and another
+                    one for human resources). The segmentation can be done based on resource type (e.g., a VLAN for file
+                    servers and another one for web servers). Commonly, segmentation is accomplished with a combination.
+                    The use of VLANs supports a more secure, layered approach in the network design.
+                </p>
+            </div>
+            <div class="content">Remote Access:
+                <p class="body">In modern networks, it is not uncommon to need to allow remote access to local network
+                    resources. Remote workers often need to acess resources that are located on the main buisness
+                    network. This requires the use of remote access technology in order for it to happen in a secure
+                    manner. Remote access can occur using telephony technology (e.g., dial-up) or through the use of a
+                    virtual private network (VPN). In all cases, secure protocols and methods shouold be used in order
+                    to ensure the security of the local network. For example, one of the forms of Extensible
+                    Authenticaion Protocol (EAP) should be used when allowing remote access.
+                </p>
+            </div>
+        </div>
         <a href="#topic">Topics</a>
     </div>
 
@@ -421,23 +751,181 @@
             <a id="commonNetworkProtocols"></a>
             <h3> Common Network Protocols</h3>
         </div>
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">IPv4 and IPv6
+            <div class="content">Internet Protocols:
+                <p class="body">With Internet protocols IPv4 still has dominance over IPv6 in the network. This will
+                    change and it is already beginning to do so. Both IPv4 and IPv6 operate at Layer 3 (the network
+                    layer) of the OSI(Open Systems Interconnection) model. Both IPv4 and IPv6 operate at the Internet
+                    layer of the TCP/IP reference model. The protocols are similar in fuction and yet are different in
+                    how they provide those functions. Both protocols are responsible for network adressing and routing
+                    operations within a network. While IPv4 has performed these duties adequately for many years, IPv6
+                    is slowly assuming those reponsibilities and will eventually be the dominant protocol.
+                </p>
+            </div>
+            <div class="content">IPv4 Overview:
+                <p class="body">A 32-bit addressing scheme that provides over 4 billion possible unique network
+                    adresses. Commonly represented in dotted decimal format --the numbers are sperated by decimals. Each
+                    unit represents eight bits (or one byte). Can use different methods of transmittin data through
+                    networks. Unicast: 1:1 communication. Multicast: 1:A Few communication. Broadcast: 1:Many
+                    communication.
+                </p>
+            </div>
+            <div class="content">IPv6 Overview:
+                <p class="body">A 128-bit addressing scheme that provides over 340 undecillion possible unique adresses.
+                    Commonly represented in comma seperated hexadecimal format. Each set contains two bytes (16bits).
+                    Usses unicast and multicast, but does not use broadcast type transmissions. Uses anycast
+                    -1:the-closest-communication to replace broadcast.
                 </p>
             </div>
         </div>
-
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Network Storage Protocol
+            <div class="content">Storage Area Network (SAN) & Network Attached Storage (NAS):
+                <p class="body">Storage Area Network (SAN) & Network Attached Storage (NAS) often get confused with one
+                    another. The SAN is an actual netowrk of devices that have the sole purpose of storing data
+                    efficiently. The NAS is a specifically designed network appliance that has been configured to store
+                    data more efficiently than standard storage methods. The difference is that a NAS is a data storage
+                    appliance that is placed on a network, while SAN is a network of data storage devices. It is not
+                    uncommon for a SAN to contain multiple devices.
+                </p>
+            </div>
+            <div class="content">Fibre Channel (FC):
+                <p class="body">A high speed network technology originally developed to operate over fiber optic cables
+                    only. The standards have been modified to allow the use of copper cabling in conjunction with the
+                    fiber. Commonly used to connect SANs together. Uses Fibre Channel Protocol (FCP) as its transport
+                    protocol to transmmit SCSI (Small Computer Systems Interface) commands to storage devices (e.g., NAS
+                    appliances).
+                </p>
+            </div>
+            <div class="content">FC over Ethernet (FCoE):
+                <p class="body">A Layer 2 protocol used to transmit FC commands over an Ethernet network. As a Layer 2
+                    protocol, FCoE is non-routable.
+                </p>
+            </div>
+            <div class="content"> Internet SCSI(iSCSI)
+                <p class="body">An IP (Layer 3) based networking standard used to connect data storage facilities and
+                    SANs. Allows SCSI commands and processes to take pace over loing distances, as iSCSI is a routable
+                    protocol.
                 </p>
             </div>
         </div>
-
-        <a href="#topic">Topics</a>
+        <div class="subTopic">Ports and Protocols
+            <div class="content">Ports:
+                <p class="body">A method of specifying what protocol or service to access. Protocols and services use
+                    default ports so they are easy to locate. There are 65,536 ports available to be used for
+                    communication, but port 0 is reversed. So in actuality,, only ports 1 to 65,535 are available. The
+                    first 1024 ports are specifically assigned and are called well known ports.
+                    www.iana.org/assignments/port-numbers . They can also be thought of as phone number extensions. The
+                    IP address is the main number you are tying to reach. The port is the extension(service or protocol)
+                    you want to access.
+                </p>
+            </div>
+            <div class="content">Protocols:
+                <p class="body">Protocols can be thought of as the language that the two applications on either side of
+                    the connection agree to speak. Protocols translate requests into services. Most protocols use
+                    pre-defined ports, but some protocols must be user configured.
+                </p>
+            </div>
+            <div class="content">HTTP(Hyper Transfer Protocol):
+                <p class="body">The primary protocol used to transfer data over the Internet. Assigned to port 80 (TCP
+                    and UDP).
+                </p>
+            </div>
+            <div class="content">HTTPS(Hypertext Transfer Protocol Secure):
+                <p class="body">The primary protocol to securely transfer data over the internet using SSL (Secure
+                    Socket Layer) or TLS (Transport Layer Security) technology. In actuality, SSL should no longer be
+                    used.
+                </p>
+            </div>
+            <div class="content">NetBIOS (Network Basic Input/Output System):
+                <p class="body">Originally developed to allow hosts to be able to communicate with servers. Assigned
+                    ports 137-139(TCP and UDP).
+                </p>
+            </div>
+            <div class="content">SMTP (Simple Mail Transfer Protocol):
+                <p class="body">The protocol used to transfew email form a client to an email server; it is also used to
+                    transfer email between servers. Assigned to port 25 (TCP and UDP).
+                </p>
+            </div>
+            <div class="content">POP3 (Post Office Protocol v3):
+                <p class="body">The protocol used by clients to retrience email from servers. Once engaged, POP3
+                    downloads all messages from the servers. The user cannot access email messages until they have been
+                    downloaded. Assigned to port 110 (TCP).
+                </p>
+            </div>
+            <div class="content">IMAP (Internet Message Access Protocol):
+                <p class="body"> A protocol used by clients to access email on email servers. Allows the client to
+                    administer and organize email on the server into folders. Assigned to port 143 (TCP).
+                </p>
+            </div>
+            <div class="content">SNMP (Simple Network Management Protocol):
+                <p class="body">A protocol used to monitor and manage local area networks. Assigned to port 161 (UDP).
+                </p>
+            </div>
+            <div class="content">DNS (Domain Name System):
+                <p class="body">The protocol used to map computer names to their IP addresses (e.g., www.google.com to
+                    74 125 28 104). Assigned to port 53 (TCP and UDP).
+                </p>
+            </div>
+            <div class="content">ICMP (Internet Control Message Protocol):
+                <p class="body">A messaging service for IP. Packets are carried as encapsulated IP datagrams. ICMP also
+                    provides information about networking issues.
+                </p>
+            </div>
+            <div class="content">Telnet:
+                <p class="body">A protocol used for remote access to systems; it is unsecure. It is a bidirectional
+                    terminal service. Assigned to port 23 (TCP and UDP).
+                </p>
+            </div>
+            <div class="content">SSH (Secure Shell):
+                <p class="body">A protocol used to encrypt all data traffic on a network; it can be used in place of
+                    Telnet to provide a secure bidirectional terminal connection. Assigned to port 22 (TCP and UDP).
+                </p>
+            </div>
+            <div class="content">TLS (Transport Layer Security).
+                <p class="body">A cryptographic protocol used to encrypt online communications. It uses certificates and
+                    asymmetrical cryptography to authenticate hosts and exchange security keys. It is a better option
+                    that SSL (Secure Socket Layer), which functions in a similar manner.
+                </p>
+            </div>
+            <div class="content">FTP (File Transfer Protocol):
+                <p class="body">A standard protocol for transferring files between computing systems; required user
+                    authentication but no encryption. Assigned to port 20 and port 21 (TCP).
+                </p>
+            </div>
+            <div class="content">SFTP (Secure File Transfer Protocol):
+                <p class="body">A protocol for transferring files between computing systems; requires user
+                    authentication and encryption by default. Assigned to port 22 (TCP and UDP) when using SSH. Assigned
+                    to port 990 (TCP and UDP) when using TLS/SSL.
+                </p>
+            </div>
+            <div class="content">SCP (Secure Copy Protocol):
+                <p class="body">A protocol for transferring files between computing systems; requires user
+                    authentication and encryption by default. Assigned to port 22 (TCP and UDP).
+                </p>
+            </div>
+            <div class="content">TFTP (Trivial File Transfer Protocol):
+                <p class="body">Transfers files between servers and clients; no user authentication required. Commonly
+                    used to upload and download network device configuration files. Assigned to port 69 (TCP and UDP).
+                </p>
+            </div>
+            <div class="content">RDP (Remote Desktop Protocol):
+                <p class="body">Used in Microsoft networks by Remote Desktop Connection and Remote Assistance to make
+                    remote connections. Assigned to port 3389 (TCP and UDP).
+                </p>
+            </div>
+            <div class="content">IPsec (Internt Protocol Security):
+                <p class="body">Works at Layer 3 of the OSI model and above. The most common suite of protocols to
+                    secure a VPN connection. Can be used with the Authenticaion Header (AH) protocol. AH only offers
+                    authentication services, no encryption. Can be used with Encapsulating Security Payload (ESP). ESP
+                    both authenticates and encrypts packets (the most popular method). Both AH and ESP will operate in
+                    one of two modes. Can be used in transport mode --between two endpoints (e.g., the
+                    host-to-host-VPN). IPsec implements Internet Security Association and Key Management(ISAKMP) by
+                    default. ISAKMP provides a method for transferring security keys and authentication data between
+                    systems, outside of the security key generating process (a much more secure process).
+                </p>
+            </div>
+            <a href="#topic">Topics</a>
+        </div>
     </div>
 
     <div class="topic" id="wirelessSecurityConsiderationsDiv">
@@ -445,22 +933,93 @@
             <a id="wirelessSecurityConsiderations"></a>
             <h3> Wireless Security Considerations</h3>
         </div>
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Challenges of Wireless Network Security
+            <div class="content">Wireless Security Considerations:
+                <p class="body">Wireless networks can represent a special challenege in the network hardening process.
+                    End users will often install their own access point (AP) for convenience, allowing them to connect
+                    to the network wirelessly on their own. These rogue APs can create a vulnerability in the network as
+                    a whole. Conducting periodic site surveys, using a combination of hardware and software, can hep to
+                    locate rogue AP's so they can be removed. Site surveys can also be used to ensure that wireless
+                    network signals are only present where they should be. The only wireless signals that should be
+                    present in any enviornment are those that are authorized.
                 </p>
             </div>
         </div>
-
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Security for Wireless
+            <div class="content">Defaullt username and passwords.
+                <p class="body"> All networking devices come with a default administrator username and password when
+                    setting up the device.
+                </p>
+            </div>
+            <div class="content">SSID (Service Set Identifier Broadcasts):
+                <p class="body">A wireless access point (WAP) will broadcasat the names (i.e., the SSIDs) of available
+                    networks. By default the SSID is broadcast in clear text, creating a vulnerability. A best practice
+                    is to set the WAP to hide the SSID beaconing; this will prevent the casual user from seeing the
+                    wireless network. Even with the beacon set to be hidden, with the proper hardware and software, an
+                    attacker can still read the broadcasts.
+                </p>
+            </div>
+            <div class="content">Device Placement:
+                <p class="body">WAPs with omnidirectional antennas should be placed at the center of the desired
+                    coverage area. Omnidirectional antennas broadcast in all directions uniformly. WAPs with directional
+                    antennas can be placed toward the edge of the desired coverage area. Directional antennas broadcast
+                    in a specific direction only.
+                </p>
+            </div>
+            <div class="content">Power Level Controls:
+                <p class="body">Most WAPs come with the ability to adjust the power levels of the RF signal. RF power
+                    levels should be set to reduce (or increase) the wireless coverage are to what is desired.
+                </p>
+            </div>
+            <div class="content">MAC filtering:
+                <p class="body"> All WAPs come with the ability to limit which Layer 2 MAC addresses can connect to the
+                    wireless network. While this can increase the security of the wireless network, MAC addresses can be
+                    spoofed. MAC filtering may not be appropriate in all situations.
+                </p>
+            </div>
+            <div class="content">WEP (Wired Equivalent Privacy):
+                <p class="body">An older encryption standard that utilized a pre-shared key (PSK) to encryypt messages
+                    between the WAP and the connecting device. Used the RC4 algorithm for the encryption. It is easily
+                    broken (Cracked) and should not be used.
+                </p>
+            </div>
+            <div class="content">WPA (Wireless Protected Access):
+                <p class="body">An older encryption standard used as an intermediate replacement for WEP. Introduced
+                    TKIP (Temporal Key Integrity Protocol) as an additional security measure. TKIP creates a new
+                    security key for every packet that is sent. It can be broken and should not be used, unless
+                    absolutely necessary.
+                </p>
+            </div>
+            <div class="content">WPA2-Personal:
+                <p class="body">The current wireless encryption standard for the home or small buissness utilizing a
+                    PSK. Introduced Counter Mode Cipher Block Chaining Message Authentication Code Protocol (CCMP) with
+                    Advanced Encryption Standard(AES) as a means of addressing the weaknesses present in WEP and WPA.
+                </p>
+            </div>
+            <div class="content">WPA-Enterprise:
+                <p class="body">The current wireless encryption standard for larger buisnesses. Users are required to be
+                    authenticated before being allowed to connect to the wireless network. Authentication can occur
+                    using different methods that fall within the 802.1X standard. The WAP will pass requests to log on
+                    to an authentication server (commonly a RADIUS server) to authenticate the user before allowing
+                    access.
+                </p>
+            </div>
+            <div class="content">Extensible Authentication Protocol (EAP):
+                <p class="body">A common authentication protocol used by WPA2 to allow access to wireless networks. EAP
+                    packets are encapsulated within 802.1X packets, which are forwarded to an authentication server.
+                    LEAP (Lightweight EAP) is a Cisco proprietary mehtod of implementing EAP. It was developed before
+                    the 802.1x standard was developed. PEAP (Protected EAP) is a method of encapsulating EAP packets
+                    with TLS in order to increase security.
+                </p>
+            </div>
+            <div class="content">Additional Wireless Network Security:
+                <p class="body">Captive portals can be used to require users to authenticate through a Web page when
+                    attempting to join a network. A common method used in publicly available wireless networks. VPN
+                    (virtual private network) over wireless can be used to further increase wireless security. Wireless
+                    network access must be through a VPN; this adds an additional level of security in the network.
                 </p>
             </div>
         </div>
-
         <a href="#topic">Topics</a>
     </div>
 
@@ -469,19 +1028,181 @@
             <a id="riskRelatedConcepts"></a>
             <h3> Risk Related Concepts</h3>
         </div>
-
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Control Types
+            <div class="content">Management Controls:
+                <p class="body">Any written policy, procedures, or guideline that is used to help secure network
+                    resources against attack or abuse. Are often used to define and outline other control types. A very
+                    broad category of controls that can include security policies, hiring policies, security awareness
+                    training, etc.
+                </p>
+            </div>
+            <div class="content">Technical Controls:
+                <p class="body">The security measures used in controlling access to any particular resources that is
+                    available on the network. Can include physical controls used to limit physical access to networking
+                    equipment (e.g., locked server rooms). Examples include encryption, firewalls, passwords, etc.
+                </p>
+            </div>
+            <div class="content"> Operational Controls:
+                <p class="body"> The procedures that are put in place to help ensure that day to day operations can
+                    ovvur, even after a risk event has happened. Examples include redundancies, hot and cold site
+                    maintenance, backup procedures, etc.
                 </p>
             </div>
         </div>
-
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Policies For Reducing Risk
+            <div class="content">Security Policies:
+                <p class="body">Any policy that is used to help secure the workplace, and/or company's data and networks
+                    is, by default, a security policy. Security policies document or outline what is allowed or not
+                    allowed to occur on the network from a security point of view. They are usually crafted at the upper
+                    layer of management with the help of knowledgable IT personnel. Security policies give
+                    administrators the authority to put into place measures to protect the security of the network. In
+                    many cases they also give administrators the authority to enfore the policies that lead to a
+                    hardened network.
+                </p>
+            </div>
+            <div class="content">Privacy Policy:
+                <p class="body"> A policy that is used to educate employees and customer on information collection
+                    practices. Why, What, When, and How information is collected. Many buisinesses now publish their
+                    privacy policies. In some cases, privacy policies may be regulated (e.g., HIPAA).
+                </p>
+            </div>
+            <div class="content">Acceptable Use Policy (AUP):
+                <p class="body">A policy that documents what a company considers to be acceptable use of its IT assests.
+                    It may contain several sub-policies. Acceptable use of: Internet, email, laptops, and mobile
+                    devices.
+                </p>
+            </div>
+            <div class="content">Security Threats:
+                <p class="body">While outside threats may be difficult to deal with, the inside threats may be more
+                    dangerous to a network. It had been estimated that up to 80 percent of all data breachs can be
+                    traced back to a filure of security measures form within the network itself. Sometimes the breaches
+                    occur by mistake, but all too often, they are intentional. This implies that the greatest security
+                    threats are the people that have allready been given access to the network. Policies and procedures
+                    can be put in place to reduce the risks that are associated with interal employees.
+                </p>
+            </div>
+            <div class="content">Least Privilege:
+                <p class="body">Administrators only grant the minimum amount of network privileges (access to network
+                    resources) that are required to get the job done. Helps to minimize risk when an account gets
+                    compromised, or in cases of malicious network users.
+                </p>
+            </div>
+            <div class="content">Seperation of Duties:
+                <p class="body">Critical jobs are seperated into different tasks, with users only authorized to perform
+                    one of the tasks. Helps to minimize the damage that can ovvur from fraudulent employee
+                    activities(e.g., the person who writes the checks isn't allowed to sign the checks, the person
+                    authorized to sign the checks isn't authorized to balance the accounts, and a third person who can't
+                    write or sign checks is responsible for balancing the accounts).
+                </p>
+            </div>
+            <div class="content">Mandatory Vacations:
+                <p class="body">All employees should be required to take vacations. Can lead to a reduction in the
+                    threat level from fraudulent employee actions. Employee know that somone else will be performing
+                    their duties in their absence and may discover any irregularities.
+                </p>
+            </div>
+            <div class="content">Job Rotation:
+                <p class="body">Mandatory job rotation requires that employees change job duties on a regular basis. Can
+                    lead to a reduction in the risk of fraudulent activities, and has the added benefit of cross
+                    training employees.
+                </p>
+            </div>
+        </div>
+        <div class="subTopic">Qualitative vs Quantitative Risk Assessments
+            <div class="content">Risk Assessments:
+                <p class="body">Many buisnesses dedicate a fair amount of their resources -both money and time- to
+                    performing risk assessments. In most cases, the risk assessments may be broken into one of two
+                    categories. They may be either qualitative or quantitative assessments. Qualitative assessments are
+                    conducted based on the probablility, or likelihood, of the risk occuring and the expected impact on
+                    the buisness. This type of assessment is not really concerned about the actual dollar impact.
+                    Quantitatice assessments are conducted based on the projected cost in dollars if a risk even occurs.
+                </p>
+            </div>
+            <div class="content">Qualitative Assessments:
+                <p class="body">Basic formula: risk = probability/likelihood X loss/impact. Several tables are build
+                    using the variables of the formulas. A risk table outlines the possible events (e.g., a data breach
+                    or hard drive failure). A probability/likelihood table outlines the possibility of the event
+                    ovvurring (e.g., not likely, likely, or most likely) with a value assigned to the likelihood. A
+                    loss/impact table outlines the impact to the buisness if the event occurs (e.g., minor, medium, or
+                    major) with a value assigned to the loss. The tables are used collectively to create the qualitative
+                    risk assessment. Often, qualitative assessments are used to determine which assets and risks require
+                    a quantitative risk assessment. Quantitative risk assessments require more time and effort.
+                </p>
+            </div>
+            <div class="content">Quantitative Assessments:
+                <p class="body">Involve using the actual cost of a threat event to help determine how much to spend on
+                    preventative measures. It doesn't make sense to spend more than the actual cost. Quantitative risk
+                    assessments can help when budgeting for a security solution to reduce the risk of occurrence. Step
+                    1: Determine the value of the asseet (may be the cost to replace the cost of downtime, etc.). Step
+                    2: Determine the exposure factor (EF)-the cost of a threat event expressed as a percentage of the
+                    value of the asses. Step 3: Determine the single loss expectancy (SLE) --the value multiplied by the
+                    EF. Step 4: Determine the average rate of occurance (ARO) --the number of times the threat event is
+                    estimated to occur each year. Step 5 Determine the average loss expectancy (ALE) --the SLE
+                    multiplied by the ARO. Step 6: determine what security solution (that falls below the ALE) will
+                    mitigate the risk.
+                </p>
+            </div>
+            <div class="content">MTTF(Mean Time to Fail):
+                <p class="body">The average time a device is expected to be operational in production before it fails
+                    --usually as reported by the manufacturer (non-recoverable occurance).
+                </p>
+            </div>
+            <div class="content">MTBF(Mean Time Between Failures):
+                <p class="body">The average time between failures of a system or device.
+                </p>
+            </div>
+            <div class="content">MTTR(Mean Time to Restore/Recover):
+                <p class="body">The average time required to restore or recover when a failure occuers.
+                </p>
+            </div>
+            <div class="content">RTO(Recovery Time Objective):
+                <p class="body">The amount of allowable time before a system or device can be down(e.g., one hour, 24
+                    hours, or 15 minutes).
+                </p>
+            </div>
+            <div class="content">RPO(Recovery Point Objective):
+                <p class="body">Represents the portion of the system that is expected to be recovered after a
+                    failure(e.g., all of it or from the point of last backup).
+                </p>
+            </div>
+        </div>
+        <div class="subTopic">Approaches to handling risk.
+            <div class="content">Mitigation:
+                <p class="body">The implementation of some type of control --e.g., administrative or technical control
+                    -to reduce either the probability of a risk occuring or the severity of the event if it does occur.
+                </p>
+            </div>
+            <div class="content">Acceptance:
+                <p class="body">Taking no action to either redve the probability of an event occring or the severity of
+                    the event if it does occur --deciding that the impact does not justify the expenditure of resources.
+                </p>
+            </div>
+            <div class="content">Transference:
+                <p class="body">Making the risk another entity's issue --usually done thorugh the
+                    purchase of insurance.
+                </p>
+            </div>
+            <div class="content">Avoidance:
+                <p class="body"> After identifying a risk, determining to avoid pursuing any action that may lead to the
+                    risk event occuring --may mean the loss of a buissness opportunity.
+                </p>
+            </div>
+            <div class="content">Deterrence:
+                <p class="body"> An attempt is made to deter the risk from occuring --usually through the use of
+                    potential punishment (e.g., termination of employment or prosecution) One of the least common
+                    approaches to dealing with risk.
+                </p>
+            </div>
+        </div>
+        <div class="subTopic">Cloud Computing and Virtualization Risks
+            <div class="content">Cloud Computing:
+                <p class="body">Cloud computing can create benefits to a buisiness. IT needs, including data storage,
+                    can be offloaded, thus reducing costs. While this may be beneficial, careful thought must go the
+                    into decision making process. This includes a thorough analysis of the risks that may be present. A
+                    review of the provider's security is in order before any buisiness should place crucial data on a
+                    cloud provider's system. The reliability of the provider's systems should also be evaluated to
+                    ensure that availability meets the buisness requirements. Additionally, in some cases, data and
+                    applications cannot reside on hosted systems because this may violate regulations.
                 </p>
             </div>
         </div>
