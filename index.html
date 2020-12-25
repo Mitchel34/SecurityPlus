@@ -2471,7 +2471,6 @@
                 </p>
             </div>
         </div>
-
         <a href="#topic">Topics</a>
     </div>
 
@@ -2594,16 +2593,80 @@
                     to identify possible weaknessess in the configuration.
                 </p>
             </div>
-        </div>
-
-        <div class="subTopic">Assessment Tools
-            <div class="content">
-                <p class="body">
-
+            <div class="content">Baseline Reporting:
+                <p class="body">Using a baseline -how the system operates under normal conditions- after an incident has
+                    occured to help determine what may be causing system issues.
+                </p>
+            </div>
+            <div class="content">Code Review:
+                <p class="body">Havinng a security tester review and analyze application code developed by in house
+                    programmers before deploying an application.
+                </p>
+            </div>
+            <div class="content">Attack Surface Review:
+                <p class="body">Having a security expert review all of the software and services (the attack surfaces)
+                    that are running on any system. The goal is to remove any unnecessary software or services to reduce
+                    the attack surfaces that are present.
+                </p>
+            </div>
+            <div class="content">Architecture Review:
+                <p class="body">A review of the underlying structure to ensure that all applications and services
+                    operate in the correct manner (e.g., determining that an application does not have access to kernel
+                    code).
+                </p>
+            </div>
+            <div class="content">Design Review:
+                <p class="body">A careful review of systems and solutions from a security point of view. Should be done
+                    before implementation - secure by design. Should be conducted after implementation - to ensure that
+                    what was requested (designed) was actually implemented.
                 </p>
             </div>
         </div>
 
+        <div class="subTopic">Assessment Tools
+            <div class="content">Protocol Analyzer (Packet Sniffer):
+                <p class="body">A tool that will passively collect information that is traversing the network. It can be
+                    used to determine what systems and processes are in operation. One goal, when used for security
+                    purposes, is to determine if sensitive information is being transmitted in clear text.
+                </p>
+            </div>
+            <div class="content">Port Scanner:
+                <p class="body">A tool that will actually scan the network for the status of ports. One goal, when used
+                    for security purposes, is to determine if any vulnerable ports are open (easy to exploit), so they
+                    can be closed.
+                </p>
+            </div>
+            <div class="content">Vulnerability Scanner:
+                <p class="body">A tool that is similar to the port scanner, but is actively searchhing the system for
+                    known vulnerabilities. It will not only check for open ports, but it will also verify configurations
+                    and patch levels. It checks the scan results against a database of know vulnerabilities.
+                </p>
+            </div>
+            <div class="content">Banner Grabbing:
+                <p class="body">Often used in conjunction with a port scan or vulnerability scan type assessment. When
+                    used with either the port or vulnerability scan, it will return what software (and which version of
+                    it) is operating on the open port. The information returned can be used to determine if the open
+                    port truly represents a security issue.
+                </p>
+            </div>
+            <div class="content">Honeypots and Honeynets:
+                <p class="body">A coimputing system or network establishment witht he sole purpose of attrating any
+                    hackers who breach the network. They have a high level of auditing in place in order to help
+                    determine how the hacker entered the system and any actions that the hacker entered and any actions
+                    that the hacker engaged in while in the system. The actual assessment of the reults of hacked
+                    honeypots/honeynets is used to further harden the legitimate system.
+                </p>
+            </div>
+            <div class="content">Passive vs. Active Assessment Tools:
+                <p class="body">Some assessment tools are passive and some are active. It is important to know which are
+                    which. Passive assessment tools are used to collect information on the network but do not actually
+                    attempt to exploit any weaknesses. Active assessment tools do the same thing, but then probe the
+                    vulnerabilities to actively determine if they can be exploited. Using an active assessment tool
+                    without explicit permmission from the organization being examined can lead to being prosecuted.
+                    Active assessments are, in actuality, a form of hacking -which, of course, is an illegal activity.
+                </p>
+            </div>
+        </div>
         <a href="#topic">Topics</a>
     </div>
 
@@ -2612,18 +2675,56 @@
             <a id="vulnerabilityScanningVsPenTesting"></a>
             <h3> Vulnerability Scanning vs Pen Testing</h3>
         </div>
-        <div class="subTopic">
-            <div class="content">
+        <div class="subTopic">Vulnerability Scanning an Penetration Testing
+            <div class="content">Vulnerability Scanning:
+                <p class="body">Vulnerability scanning is usually conducted using specialized applications in an effort
+                    to find weaknesses in a network. It is usually conducted using protocl analyzers (also called packet
+                    sniffers) and port scanners. These applicatoins can be used to determine which protocols and
+                    services are being used on a network. Protocol analyzers can also be used to determine which ports
+                    are open on a network. This information can be used by security experts to help harden the network
+                    against attack. Vulnerability scanning does not attempt to exploit any weaknesses that are found. It
+                    only identifies them for the security personnel.
+                </p>
                 <p class="body">
-
+                    The purpose is to assess the configuration of systems and networks to determine what can be done to
+                    increase the level of security. This is done passively by collecting information andn reporting on
+                    the information collected in a non=intrusive manner. The scan can help to identify different issues:
+                    Lack of security controls, common misconfigurations, etc. Two different types of vulnerability scans
+                    should be conducted. As an authorized user -a credential scan should be conducted from an
+                    administrative account. As an unauthorized -a noncredential scan should be conducted to determine
+                    what an unauthorized us may find out about a system. A false positive may be reported by
+                    vulnerability scans. Something reported as a vulnerability that isn't actually one.
+                </p>
+            </div>
+            <div class="content">Penetration Testing:
+                <p class="body">Also known as pen testing is actively seeking to find vulnerabilities in networks and
+                    systems that can be exploited. Once a weakness is found, the pen tester then attempts to exploit the
+                    vulnerability. Many organization use pen testing as a means of increasing the security of their
+                    organizations; however, hackers also use pen testing as a means of finding networks and systems they
+                    can exploit. As a result, every secyrity expert must be sure to receive explicit authorization to
+                    perform pen testing before beginning the test. If such authorization is not obtained, a security
+                    expert could face dire consequences. Unauthorized pen testing is, in actuality illegal -as its a
+                    form of hacking.
+                </p>
+                <p class="body">
+                    The purpose is to assess the security of a system or network by actually using the same methods that
+                    a hacker would use to breach security. The test can be used to verify that a threat exists. Can also
+                    confirm that the threat doesn't exist. The test can be used to verify that a threat exists. Can also
+                    confirm that the threat doesn't exist. The test seeks to actively test and bypass any security
+                    controls that may be present. It is desiged to exploit any vulnerabilities that may be present on
+                    the system or network. Unauthorized pen testing may lead to legal issues.
                 </p>
             </div>
         </div>
-
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Levels of Testing
+            <div class="content">Testing Security at Different Levels:
+                <p class="body">It is vital that, when security tests are conducted on systems and networks, the testing
+                    be conducted at a variety of levels. The first level of security testing should be done at the white
+                    box level. While white box testing is when the person conduccting th test has the exact details of
+                    the system or network; the tested has intimate knowledge of what is present and how it is
+                    configured. The final level of security testing is done at the black box level. With black box
+                    testing, the tester (usually a security exper) is given no prior knowledge of the configuration or
+                    what is present.
                 </p>
             </div>
         </div>
@@ -2636,22 +2737,93 @@
             <a id="applicationSecurityControlsAndTechniques"></a>
             <h3> Application Security Controls and Techniques</h3>
         </div>
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Secure Coding Concepts:
+            <div class="content">Securing Software:
+                <p class="body">Hackers will often focus on applications (software) when they are attempting to breach
+                    network security. Because of this, application developers need t ofocus on security controls right
+                    from the beginning of developing the application. This is the idea of using secure coding concepts.
+                    An application designed with security in mind is much easier to defend then an applicatoin that
+                    doesn't use such methods. Two of the main concepts of secure coding are error and exceptoin handling
+                    and input validationn.
+                </p>
+            </div>
+            <div class="content">Error Handling:
+                <p class="body">Thoroughly testing applications will catch most errors, with the possible exception of
+                    some runtime errors. Runtime errors are problems that occur during the operation of an application.
+                    Many things can cause a runtime error. They include poor programming, conflicts with other software
+                    (including malicious applications), and conflicts with hardware. The developer should put processes
+                    in place that trap all runtime errors before such an error crashes the application. Trapping a
+                    runtime error requires that the developer intercept the error and display a warning message before
+                    the error causes the application to crash.
+                </p>
+            </div>
+            <div class="content">Exception Handling:
+                <p class="body">A more advanced method of error handling. An exception is a different term for a runtime
+                    error. Exception handling code will use a try/catch block -try this code and catch any errors that
+                    occur. Usually will provide a means of looping the program until the error condition subsides.
+                </p>
+            </div>
+            <div class="content">Input Validation:
+                <p class="body">A major cause of runtime errors and other security issues in applications is users
+                    inputting invalid data into the application. Secure coding requires that input validation be done
+                    before that data is actually placed into the application. Input validation is when the uses supplied
+                    data is examined against a set of rules that outline what type of data the applicatoin is expecting.
+                    One method of testing input validation rules is to use fuzzing. During the testing phase of the
+                    application, the developer will input invalid or random data into the input fields in order to test
+                    the input validation rules.
                 </p>
             </div>
         </div>
 
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Other Security contorls, techniques, and concepts.
+            <div class="content">Client-Side and Server-Side Validation:
+                <p class="body">Initial input validation should occur on the client (requesting machine) before it is
+                    sent to the application on the server. This can help to prevent a runtime error or exploit on the
+                    server and reduces the amount of traffic that is crossing a network. Additional input validation
+                    should occur at the server (receiving machine) before the input is passed on to the application
+                    -further reducing the chances of a runtime error or an exploit occuring.
+                </p>
+            </div>
+            <div class="content">Cross-Site Scripting(XSS) Prevention:
+                <p class="body">XSS occurs when a hacker inserts script code into a form on a website so that when other
+                    users access the form, the script is executed. Proper input validation of data is usually an
+                    effective means of preventing XSS from occuring.
+                </p>
+            </div>
+            <div class="content">Cross-Site Request Forgery (XSRF) Prevention:
+                <p class="body">XSRF is when a user is automatically directed to a linked web page and logged in using
+                    data supplied bu a cookie from the original page -when this was not the web developer's intent. Web
+                    developers can help to prevent XSRF from occuring by setting a short expiration time for cookies.
+                    User cna help prevent XSRF by choosing not to have a website automatically log them in when they
+                    visit the site.
+                </p>
+            </div>
+            <div class="content">Application Configuration Baseline:
+                <p class="body">The initial setting up of an application (the baseline) should be done with security in
+                    mind. The baseline should be as secure as possible.
+                </p>
+            </div>
+            <div class="content">Application Hardening:
+                <p class="body">Disabling all features and functions that users should not be allowed to use (e.g.,
+                    disabling an application's ability to use FTP). Should initially be done during the configuration
+                    proccess.
+                </p>
+            </div>
+            <div class="content">Applicaton Patch Management:
+                <p class="body">New exploits and threats against applications are created all the time, requiring that
+                    applications be updated on a regular basis. Patches are used to fic problems (e.g., security issues)
+                    that were unknown all the time the application was developed. Caution just as with operating system
+                    patches, applicatoin patches must be tested before being deployed into a production setting.
+                </p>
+            </div>
+            <div class="content">SQL vs NoSQL Databases:
+                <p class="body">SQL databases are the most common relational database management system used today. They
+                    are optimized for the inserting and updating of records in a database. NoSQL databases are designed
+                    to store and retrieve large amounts of data -big data. They must be optimized for the retreival of
+                    big data, and require different methods of input validation than a SQL database.
                 </p>
             </div>
         </div>
-
         <a href="#topic">Topics</a>
     </div>
 
@@ -2660,22 +2832,177 @@
             <a id="mobileSecurityConceptsAndTechnologies"></a>
             <h3> Mobile Security Concepts and Technologies</h3>
         </div>
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
+        <div class="subTopic">Mobile Device Security
+            <div class="content">Lost and Theft:
+                <p class="body">Since the introduction of the mobile device, loss and theft have been a concer. Just
+                    about everyone has either lost a mobile device or had one stolen. In the early years, the major
+                    convern was that a cell phone was going to be used to call some foreign country or toll number and
+                    the owner would get stuck with a large bill. Now -with the rise in popularity of smartphones and
+                    tablets and the greater portability of data -much more may be at stake. This is especially true with
+                    the advent of bring your own device (BYOD) policies in the workplace.
+                </p>
+            </div>
+            <div class="content">Screen Locks:
+                <p class="body">All mobile devices (e.g., phones tablets and laptops) should hace the screen lock set.
+                    The timer should be set for a relatively short period of time.
+                </p>
+            </div>
+            <div class="content">Lockout Settings:
+                <p class="body">In the case of loss or theft, configuring lockouts will help to prevent unauthorized
+                    access to the device. After a specified number of attempts to log in, the device will not allow any
+                    further attempts until adminstrative action is taken .
+                </p>
+            </div>
+            <div class="content">GPS:
+                <p class="body">Many mobile devices have GPS capabilities, allowing the device to be located if it is
+                    lost or stolen. Asset Tracking utilizes GPS capabilities to pinpoint a device's location.
+                </p>
+            </div>
+            <div class="content">Remote Wiping:
+                <p class="body">Some mobile devices allow for the device to be wiped (all data and applicatoins are
+                    removed) remotely. This can be used if a device is unrecoverable.
+                </p>
+            </div>
+            <div class="content">Full Device Encryption:
+                <p class="body">Whenever possible, full device encryption should be used to prevent a malicious entity
+                    from reading the contents of the device. This is especiall vital for laptops.
+                </p>
+            </div>
+            <div class="content">Disabling Unsused Features:
+                <p class="body">Unused features may represent a security risk and should be disabled to prevent their
+                    exploitation.
+                </p>
+            </div>
+            <div class="content">Removable Storage:
+                <p class="body">In some situations, it may be necessary to disable a mobile device's ability to use
+                    removable storage capabilities.
+                </p>
+            </div>
+            <div class="content">Application Controls:
+                <p class="body">Many mobile applications attempt to access unnecessary user information (e.g., the
+                    location of the device). Controls should be used to limit the data that applications can access and
+                    to restrict the actions that applications may undertake.
+                </p>
+            </div>
+            <div class="content">Storage Segmentation:
+                <p class="body">Some mobile devices allow for the segmentation of storage, which allows for controls to
+                    be put in place to limit how data can be accessed on the device.
+                </p>
+            </div>
+            <div class="content">Inventory Control:
+                <p class="body">All mobile devices should be inventored and tracked.
+
+                </p>
+            </div>
+            <div class="content">Mobile Device Management:
+                <p class="body">Software that is used to manage features that are available on mobile devices. It
+                    usually also has a feature that will remotely wipe a device.
+                </p>
+            </div>
+            <div class="content">Device Access Control:
+                <p class="body">Implement any device access controls that can be used to restrict who can access the
+                    mobile device and/or any features on the mobile device.
+                </p>
+            </div>
+        </div>
+        <div class="subTopic">Mobile Application Security
+            <div class="content">Encryption:
+                <p class="body">Ensure that mobile applications are encryptions are encrypting sensitive data that is
+                    stored on the device. Encryption keys must also be created and stored securely.
+                </p>
+            </div>
+            <div class="content">Credentials Management:
+                <p class="body">Security credentials used by applications must be implemented in a secure manner,
+                    including storing the credentials in an encrypted format.
+                </p>
+            </div>
+            <div class="content">Authentication:
+                <p class="body">A best practice is for the mobile application to authenticate the user and to base
+                    access to data on the user's authentication level.
+                </p>
+            </div>
+            <div class="content">Geotagging:
+                <p class="body">Some mobile applications store geographical information when they are used. A
+                    determination must be made as to whether or not to allow it. Geotagging may present a privacy
+                    concern.
+                </p>
+            </div>
+            <div class="content">Application Whitelisting:
+                <p class="body">Some mobile applications allow for whitelisting -alist of allowed applications that can
+                    access features in the original application. Any whitelisting capabilities should be managed.
+                </p>
+            </div>
+            <div class="content">Transitive Trust/Authentication:
+                <p class="body">An application will trust an unknown security enviornment if it is truste by a security
+                    enviornment that the application trusts. For example, application Z trust enviornment T. Enviornment
+                    T trusts enviornment U. Application Z, therefore, trusts enviornment U. This may or may not
+                    represent a security issue.
+                </p>
+            </div>
+        </div>
+        <div class="subTopic">The Challenges of BYOD:
+            <div class="content">Policy:
+                <p class="body">Bring your own device policies allow people to use their own personal deices to conduct
+                    official business activities. This does have a benefit for both the buisness and the people who work
+                    there. The business doesn't have to purchase the devices, which saves on expenses. The people who
+                    take advantage of BYOD policies get to use the devices that they prefer. In addition to that, people
+                    no longer need to carry multiple devices. On the other hand, BYOD policies can represent some
+                    special challenges for security personnel and system administrators that may need to be overcome.
+                </p>
+            </div>
+            <div class="content">Data Ownership:
+                <p class="body">When employees use their own devices, who owns what data can be a challenge. A clear
+                    understanding that company data and applications are always company property needs to be achieved.
+                </p>
+            </div>
+            <div class="content">Device Support:
+                <p class="body">Before BYOD, the organization was responsible for supporting mobile devices. Support for
+                    mobile devices may still be offered by the organization; however, in most cases, the user is the
+                    responsible party.
+                </p>
+            </div>
+            <div class="content">Patch and Anit-Virus Management:
+                <p class="body">The organization must be determine how it will enforce patch and anti-virus management.
+                    This can be achieved through the use of NAC (Network Access Control) systems. The mobile device
+                    owner may be required to agree to keep the device's patch level and antivirus up to date.
+                </p>
+            </div>
+            <div class="content">Forensics:
+                <p class="body">In order to ensure the security of the organization, the device owner needs to afree
+                    that, if a security incident occurs, a forensic analysis of his or her device can be done. This can
+                    become an issue with privacy.
+                </p>
+            </div>
+            <div class="content">Privacy Challenges:
+                <p class="body">How to ensure the employee's privacy, while as the same time keep company data safe and
+                    secure may become an issue. Most organizations reserve the right to monitor all employee activities
+                    (including those activities that take place on mobile devices), which may conflict with personal
+                    activities on personal devices.
+                </p>
+            </div>
+            <div class="content">Onboard Cameras/Video:
+                <p class="body">For security, it may be necessary to require that device owners agree to disable image
+                    recording capabilities on their mobile devices. The special challenge here is ensuring that they do
+                    so.
+                </p>
+            </div>
+            <div class="content">Architecture/Infrastructure Considerations:
+                <p class="body">The organization's IT architecture and infrastructure may need to be modified to
+                    accommodate BYOD. May require an increase in the IP address range that is made available through
+                    DHCP. May require an increase in the IP address range that is made available through DHCP. May
+                    require supporting different operating systems (e.g., Windows or OS X). May require supporting
+                    diffrent operating systems (e.g., Windows Phone, iOS, Android).
+                </p>
+            </div>
+            <div class="content">Legal Concerns:
+                <p class="body">BYOD practices can bring other legal issues into play. This is the reason that many
+                    organizations do not allow BYOD. When the wiping of organizational data off of a device also removes
+                    personal data. Theh challenge is to how to seperate personal use from buisness use and personal data
+                    from business data.
 
                 </p>
             </div>
         </div>
-
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
-                </p>
-            </div>
-        </div>
-
         <a href="#topic">Topics</a>
     </div>
 
@@ -2684,22 +3011,107 @@
             <a id="solutionsUsedtoEstablishHostSecurity"></a>
             <h3> Solutions Used to Establish Host Security</h3>
         </div>
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Hardening Physical Hosts
+            <div class="content">The Process:
+                <p class="body">The individual hosts on a network are the target of hackers. It is the resources that
+                    they contain that the attackers are after. Because the major purpose of networks is to create a way
+                    in which communication and data can flow between systems, they are vulnerable to being breached by
+                    hackers. This means that, once a breach has occured, it is vital that all of the hosts on a netowrk
+                    be hardened against attack. Hardening hosts is the process of putting technological controls in
+                    place that help to ensure the safety and integrity of the hosts -including the data and resources
+                    that they contain.
+                </p>
+            </div>
+            <div class="content">Operating System Hardening:
+                <p class="body">Remove or disable any unnecessary features and services to
+                    reduce the OS's attack surface. All features and services will present some type of vulnerability
+                    that
+                    can be exploited.
+                </p>
+            </div>
+            <div class="content">OS Security Settings:
+                <p class="body">Review all security settings available in the OS and enable as many of them as make
+                    sense to help harden the OS. Do not leave defaults in place, defaults are well known and may
+                    represent a chink in the OS's armor.
+                </p>
+            </div>
+            <div class="content">Anti-Malware:
+                <p class="body">Install it to protect against common attacks. Anti-Malware applications
+                    should contain antivirus, anti-spyware, pop-up blockers, and anti-spam features.
+                </p>
+            </div>
+            <div class="content">Patch Management:
+                <p class="body">Ensure that the OS is kept up to date with curent security patches supplied by the
+                    manufacturer of the OS. All software installed on the ohst should also be part of the patch
+                    management program to ensure that those applications don't become a weakness in the system. All
+                    firmware should also be patched as required.
+                </p>
+            </div>
+            <div class="content">Trusted OS:
+                <p class="body">Using an OS that implements multiple layers of security by design (e.g.,
+                    requires authentication and authorization before granting access to host resources).
+                </p>
+            </div>
+            <div class="content">Whitelisting Applications:
+                <p class="body">Only applications that are specifically designated in the whitelist are allowed to run
+                    on the host.
+                </p>
+            </div>
+            <div class="content">Blacklisting Applications:
+                <p class="body">Explicitly denying (blocking) named applications from being run on a host.
+                </p>
+            </div>
+            <div class="content">Host-Based Firewalls:
+                <p class="body">Using host-based firewalls to control what network traffic can be
+                    allowed into or out of the host. Especially important for mobile devices.
+                </p>
+            </div>
+            <div class="content">Host-Based Intrusion Detection System (HIDS):
+                <p class="body">implemented to monitor the host to help detect when an intrusion as occured to help
+                    minimize (or contain) any damage.
+                </p>
+            </div>
+            <div class="content">Host Software Baselining:
+                <p class="body">Baselining software can be used to ensure that all OSs and applications on a host meet
+                    or exceed the minimum level of security that is required.
+                </p>
+            </div>
+            <div class="content">Physical Security Controls:
+                <p class="body">Physical Security Controls can be overlooked when implementing host hardening methods.
+                    Lock the doors!
                 </p>
             </div>
         </div>
-
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Hardening Virtual Hosts
+            <div class="content">Snapshot:
+                <p class="body">An image of the virtual host created at a point in time when that host is
+                    secure. It can be used to quickly revert the virtual host in cases where security has been
+                    compromised.
+                    Snapshots can also be used to bring new hosts into service quickly and efficiently as needed,
+                    creating
+                    elasticity in the system.
+                </p>
+            </div>
+            <div class="content">Patch Management:
+                <p class="body">Same consideration as with the physical hosts.
+                </p>
+            </div>
+            <div class="content">Host Availability:
+                <p class="body">High availability methods should be used to ensure that virtual host systems are
+                    available to users as needed, removing single points of failure.
+                </p>
+            </div>
+            <div class="content">Security Control Testing:
+                <p class="body">Seperate security testing should be conducted on curtual systems to ensure that they
+                    operate as expected.
+                </p>
+            </div>
+            <div class="content">Sandboxing:
+                <p class="body">When high security is needed, a sandboxed environment can be created. Creating a virtual
+                    enviornment in which the virtual machines are restriceted to what they have acces to.
                 </p>
             </div>
         </div>
-
         <a href="#topic">Topics</a>
     </div>
 
@@ -2708,18 +3120,120 @@
             <a id="controlsToEnsureDataSecurity"></a>
             <h3> Controls to Ensure Data Security</h3>
         </div>
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Technological Controls for Data Security
+            <div class="content">Data:
+                <p class="body">As the lifeblood of any organization, data needs to be kept safe and secure at all
+                    times. Any time unauthorized access to data occurs, it can be considered a data breach. A data
+                    breach may cost the organization in reputation, revenue, fines, or in loss of trade secrets. Because
+                    of this, special emphasis is placed on controls for keeping data secure. Data ma be inone of three
+                    states. It may be in transit, at rest, or in use. In order to ensure the security and integrity of
+                    the data, technology controls should be used for all three states.
+                </p>
+            </div>
+            <div class="content">Data Encryption:
+                <p class="body">Whenever possible, data should be maintained in an encrypted format. Encryption ensures
+                    that, even if a data breach happens, no actual loss of data occurs. Data encryption can be
+                    implemented at different places and levels.
+                </p>
+            </div>
+            <div class="content">Full Disk Encryption:
+                <p class="body">All of the contents of the storage drive are encrypted, in order to access anything on
+                    the drive, the proper key must be input.
+                </p>
+            </div>
+            <div class="content">Database Encryption:
+                <p class="body">Sensitive information contained databases(e.g., customer credit card numbers) should
+                    always be kept in an encrypted format.
+                </p>
+            </div>
+            <div class="content">Individual File Encryption:
+                <p class="body">If full disk encryption is not used, then all sensitive files should be encrypted.
+                </p>
+            </div>
+            <div class="content">Removabe Media Encryption:
+                <p class="body">When data is allowed onto removable media, controls should be put in place that ensure
+                    that it is always encrypted on that media.
+                </p>
+            </div>
+            <div class="content">Mobile Device Encryption:
+                <p class="body">Because of their nature (highly portable and prone to loss),
+                    all mobile devices that are allowed to contain organizational data should also implement device
+                    encryption.
+                </p>
+            </div>
+            <div class="content">Hardware based Encryption:
+                <p class="body">In most cases, hardware based encryption (encryption solutions built into the device)
+                    will outperform software based encryption solutions -as the chipset in the device is optimized to
+                    perform the necessary algorithmic calculation.
+                </p>
+            </div>
+            <div class="content">TPM (Trusted Platform Module):
+                <p class="body">A specialized chip is used on the motherboard (which must be supported by the BIOS) to
+                    contain the cryptographic keys and perform the encryption.
+                </p>
+            </div>
+            <div class="content">HSM (Hardware Security Module):
+                <p class="body">A specialized add-on card is installed into the system to perform the hardware
+                    encryption.
+                </p>
+            </div>
+            <div class="content">USB and Portable Hard Drive Encryption:
+                <p class="body">When data is allowed onto portable media, only devices that support encryption should be
+                    used (e.g., IronKey flash drive).
+                </p>
+            </div>
+            <div class="content">File and Folder Permissions:
+                <p class="body">A method of specifying who can access files and folders (through authentication) and
+                    what manipulations can be performed on the data (through authorization) once it has been accessed.
+                    Permissions are usually established through the use of a type of ACL (Access Control List).
+                </p>
+            </div>
+            <div class="content">Data Policies:
+                <p class="body">Policies (usually a form of administrative control) should be put in place that outline
+                    the technological controls that detail how data should be handled. The policies should outline at
+                    least the following controls.
+                </p>
+            </div>
+            <div class="content">Storage:
+                <p class="body">Controls put in place that determine where and how data may be stored (including levels
+                    of encryption).
+                </p>
+            </div>
+            <div class="content">Retention:
+                <p class="body"> Controls put in place that determine specifically how long data must be kept and
+                    maintained and when data must be disposed of.
+                </p>
+            </div>
+            <div class="content">Disposal:
+                <p class="body">Controls put in place that specifically how data must be disposed of; the controls cover
+                    both physical and electronic data (e.g., the shredding of documents and hard drives).
+                </p>
+            </div>
+            <div class="content">Wiping:
+                <p class="body">Controls put in place that specify how data on devices that are no longer in use or are
+                    going to be repurposed must be handled -usually through the use of secure data wiping process.
                 </p>
             </div>
         </div>
 
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Unique Data Security Situations
+            <div class="content">The Storage Area Network (SAN) Situation:
+                <p class="body">Many organizations will utilize SAN as method of storing and accessing data. As most
+                    SANS reside on their own networks, controls must be put in place to ensure the security of the
+                    communication channel and keep data secure.
+                </p>
+            </div>
+            <div class="content">The Cloud Storage Situation:
+                <p class="body">Cloud storage is another situatoin where special controls must be put in place to keep
+                    data secure. It addition to that, in some cases, it is not appropriate to store data on a third
+                    party could solution (e.g., personally identifiable information should never be stored outside of
+                    the organization's control).
+                </p>
+            </div>
+            <div class="content">The Big Data System Situation:
+                <p class="body">Big data storage and transmission methods should have specific controls in place to
+                    ensure that communication channels are secure and that sensitive data is maintained in a secure
+                    manner at all times.
                 </p>
             </div>
         </div>
@@ -2732,18 +3246,106 @@
             <a id="mitigatingRisksInALternativeEnviornments"></a>
             <h3> Mitigating Risks in Alternative Enviornments</h3>
         </div>
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Alternative Enviornments
+            <div class="content">Static Enviornment:
+                <p class="body">As more devices arrive in the workplace with processors build into them, security
+                    experts are facing more challenges in securing them. These devices are often considered to be a
+                    static enviornment because the processing power and hardware that the device comes with cannot be
+                    modified or changed. In some cases, exploits have been specifically created to take advantage of the
+                    difficulty in securing these enviornments. Through some careful planning and implementation, some
+                    techniques can be utilized to mitigate the risks represented in static enviornments.
+                </p>
+            </div>
+            <div class="content">SCADA (supervisory control and data acquisition):
+                <p class="body">A type of industrial control system(ICS) that is designed to control large scale
+                    deployments of equipment. The controlled equipment is usually at more than one site. Often deployed
+                    in the energy industry -both on the creation and distribution side. SCADA tends to have a lack of
+                    security in the monitors and controllers that are used to manage the system. Physical security
+                    controls should be used to limit access to SCADA components.
+                </p>
+            </div>
+            <div class="content">Embedded Systems:
+                <p class="body">A self contained computing system that can be found within a larger system (e.g.,
+                    printers, HVAC systems, or smart TVs). Often, these embedded systems lack basic security features or
+                    implement weak security. The devices tend to utilize very basic versions of well know operating
+                    systems. Security hardening techniques should be used to secure these devices.
+                </p>
+            </div>
+            <div class="content">Smartphones:
+                <p class="body">Mobile phones are increasingly becoming an important tool in the modern workplace. Due
+                    to their increasing capabiilities, they also are becoming a greater security risk. Because of their
+                    portability, smartphones are subject to loss and theft. Security should be focused on restricting
+                    access to data on the phone, whenever possible, encryption should be used.
+                </p>
+            </div>
+            <div class="content">Game Consoles:
+                <p class="body">Most modern game consoles can be connected to networks. In many cases, the console must
+                    be connected to the network in order to take advantages of gaming features. Security features for
+                    gaming consoles has been increasing. All updates should be in place for any gaming console that is
+                    placed on a network.
+                </p>
+            </div>
+            <div class="content">Mainframes:
+                <p class="body">High cost; powerful computing systems that contain significant processing power. Due to
+                    their cost, mainframes are n ot replaced very frequently and may be using older versions of
+                    operating systems -which may have well known vulnerabilities. Technological controls should be in
+                    place to help secure mainframes. Firewalls, access control lists (ACLs), and door locks can all be
+                    implemented to restrict access to the mainframe enviornment.
+                </p>
+            </div>
+            <div class="content">In-Vehicle Computing Systems:
+                <p class="body">Car manufacturers have been using processors in vehicles for many years. Initially, the
+                    processors had limited capabilities and could prove difficult to exploit without physical access to
+                    the vehicle. Modern vehicles are coming with more connected systems that may represent a challenge
+                    to security. In july 2015, a security team demonstrated the ability to take over a vehicle's systems
+                    remotely, including the ability to take control of the braking system.
                 </p>
             </div>
         </div>
 
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Risk Mitigation Techniques
+            <div class="content">Segmentation:
+                <p class="body">A network design element in which resources are separated -by function and security
+                    requirements -into their own networks. Can be used to control communication and security within the
+                    network.
+                </p>
+            </div>
+            <div class="content">Security Layers:
+                <p class="body">Placing security at different places and levels within a network will increase the
+                    security of the network as a whole. If one layer of security is breached, attackers will find
+                    another layer waiting to frustrate them -like the layers of an onion.
+                </p>
+            </div>
+            <div class="content">Application Firewalls:
+                <p class="body">Can be used to filter traffic based on what applications are allowed to operate on the
+                    network and which are not allowed to work on the network.
+                </p>
+            </div>
+            <div class="content">Updates:
+                <p class="body">Patches and system updates should be used to help keep computing enviornments secure.
+                    Best practice is to use manual updating process so that proper testing of the update can be done.
+                </p>
+            </div>
+            <div class="content">Firmware Version Control:
+                <p class="body">Updates to firmware should be done if they will lead to an increase in security or in
+                    vital functionality.
+                </p>
+            </div>
+            <div class="content">Wrappers:
+                <p class="body">A host based ACL that can be used in conjunction with a firewall increase the
+                    effectiveness of security. Found in Linux and UNIX enviornments and can be used to specify how an
+                    individual host can access a specific service (e.g., allowing Bob access to SCP but not to FTP on
+                    the file server).
+                </p>
+            </div>
+            <div class="content">Importance of Variety:
+                <p class="body">When implementing a layered security mitigation technique, it is important to use a
+                    variety of products. If all of the firewalls used in the layered approach are the same product, then
+                    they will more than likely all have the same vulnerability. Once an attacker breaches one firewall,
+                    the res will likely fall in short order. A best practice is to implement a diversity of products for
+                    security considerations (e.g., different firewall devices). If different products are used, then the
+                    hacker has to figure out how to get past each individual product, and the attacker cannot rely on
+                    the same vulnerability being present in each device.
                 </p>
             </div>
         </div>
@@ -2756,7 +3358,7 @@
             <a id="summaryOfAuthenticationServices"></a>
             <h3> Summary of Authentication Services</h3>
         </div>
-        <div class="subTopic">
+        <div class="subTopic">Function and Purpose of Authentication Services
             <div class="content">
                 <p class="body">
 
@@ -2764,7 +3366,7 @@
             </div>
         </div>
 
-        <div class="subTopic">
+        <div class="subTopic">Authentication Services
             <div class="content">
                 <p class="body">
 
