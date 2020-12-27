@@ -583,7 +583,7 @@
     <div class="topic" id="cloudConceptsDiv">
         <div class="topicTitle">
             <a id="cloudConcepts"></a>
-            <h3> Secure Network Desgn Elements and Components</h3>
+            <h3> Cloud Concepts</h3>
         </div>
         <div class="subTopic">Cloud Classifications
             <div class="content">Cloud Computing:
@@ -3359,21 +3359,72 @@
             <h3> Summary of Authentication Services</h3>
         </div>
         <div class="subTopic">Function and Purpose of Authentication Services
-            <div class="content">
-                <p class="body">
-
+            <div class="content">Best Practice:
+                <p class="body">A best practice in network security is to require authorization when access is desired
+                    either to the network or resources on the network. Authentication services are basically the first
+                    step in the authorization process. Authentication services require requesters to proce that they are
+                    who they say they are by the submission of some type of credentials (e.g., usernames and passwords).
+                    The service then examines the credentials against a database. The database will contain information
+                    on which credentials the authentication service will accept. It accepted, one of two things occurs-
+                    the authorization is granted or the authentication service passes the approved credentials to an
+                    authorization service.
                 </p>
             </div>
         </div>
-
         <div class="subTopic">Authentication Services
-            <div class="content">
-                <p class="body">
-
+            <div class="content">AAA Authentication, Authorization, and Accounting:
+                <p class="body">AAA protocols will validate the credentials of the requester (authentication), grant
+                    access to the resource (authorization), and then log the requestor's activity (accounting). All of
+                    these separate functions can be combined into a single protocol. In other cases, the individual
+                    services (i.e., authenticatoin, authorization, and accounting) are actually seperated. In this
+                    situation, the services will be set up in a manner in which they will pass information back and
+                    forth in order to form a holistic, secure enviornment.
+                </p>
+            </div>
+            <div class="content">RADIUS (Remote Authentication Dial-In User Service):
+                <p class="body">A remote access service that is used to authenticate remote users and grant them access
+                    to authorized network resources. It is a popular AAA protocol used to help ensure that only
+                    authenticated end users are using the network resources they are authorized to use. The accounting
+                    features are very robust. Only the requester's (the end user's) password is encrypted.
+                </p>
+            </div>
+            <div class="content">TACACS+ (Terminal Access Controller Access-Control System Plus):
+                <p class="body">A remote access service that is used to authenticate remote devices and grant them
+                    access to authorized network resources. It is a popular AAA protocol used to help ensure that only
+                    authenticated remote network devices are using the network resources they are authorized to use. The
+                    accounting features are not as robust as those of RADIUS. All transmissions between devices are
+                    encrypted.
+                </p>
+            </div>
+            <div class="content">Kerberos:
+                <p class="body">Authentication protocol, which uses TCP or UDP port 88. A system of authentication and
+                    authorization that works will in enviornments that have a lot of clients. The Key Distribution
+                    Center (KDC) is the main component. The KDC has two parts -the authentication server (AS) and the
+                    Ticket-Granting Service (TGS). When a user logs in, a hash of his or her username and password is
+                    sent to the AS, if the AS likes the hash, it responds with a ticket granting ticket (TGT) and a
+                    timestamp. The client sends the TGT with timestamp to the TGS. The TGS responds with a service
+                    ticket (can also be called an access token or just a token). The service ticket(token) authorizes
+                    the user to access specific resources. As long as the TGT is still valid, the TGS will grant
+                    authorizatoin by issuing a new service ticket.
+                </p>
+            </div>
+            <div class="content">LDAP (Lightweight Directory Access Protocol):
+                <p class="body">A directory service protocol that can be used to authenticate clients. LDAP requests are
+                    sent over TCP port 389. Applications that are LDAP compliant will validate the client and then
+                    retrieve the requested information stored in the directory.
+                </p>
+            </div>
+            <div class="content">Secure LDAP:
+                <p class="body">Encrypted version of LDAP using SSL (Secure Socket Layer) over TCP port 636. All
+                    communication between the client and LDAP is secure.
+                </p>
+            </div>
+            <div class="content">SAML (Security Assertion Markup Language):
+                <p class="body">An XML (Extensible Markup Language) standard that is used to allow systems to exchange
+                    authentication and authorization information.
                 </p>
             </div>
         </div>
-
         <a href="#topic">Topics</a>
     </div>
 
@@ -3382,20 +3433,82 @@
             <a id="authenticationAndAuthorizationBasics"></a>
             <h3> Authentication and Authorization Basics</h3>
         </div>
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Identification, Authentication, and Authorization
+            <div class="content">Identification:
+                <p class="body">When an entity specifically declares who or what it is in a manner in which the
+                    receiving party understands. When the entit is person and the receiving party is a computer, the
+                    most common form of identification is a username.
                 </p>
             </div>
+            <div class="content">Authentication:
+                <p class="body">A process where the identifying party offers some form of credentials
+                    to validate the identification (e.g., supplying a password with the username).
+                </p>
+            </div>
+            <div class="content">Authorization:
+                <p class="body">What the authenticated entity is allowed to access or the actions that may be taken
+                    (e.g., authorization to access theh FTP server and modify files on that same server).
+                </p>
+            </div>
+            <div class="content">Common Identification Methods:
+                <p class="body">Username should be unique to the system is being accesed. Personal identification
+                    verification card; usually issued by an accepted authority. US government, state government, or the
+                    organization that is accepting the identification. Also contains information on authentication
+                    (e.g., it may contain information on biometric values of the user). Biometrics: a physical trait
+                    that is unique to the individual that is diffucult to modify or change (e.g., a fingerprint).
+                </p>
+            </div>
+            <div class="content">Common Authentication Factors:
+                <p class="body">Username and password, biometrics, security token or smartcard, typing pattern, GPS
+                    location, IP address.
+                </p>
+            </div>
+
         </div>
 
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Authentication Concepts
+            <div class="content">Multifactor Authentication:
+                <p class="body">Requireing more than one of the authentication factors to be present before the
+                    authentication process can be completed. Username and password is a single factor authentication
+                    method, as these both come from the "someting you know" category. Requiring a username, password,
+                    and a fingerprint scan is a two factor authentication method (something you know combined with
+                    something you are).
                 </p>
             </div>
+            <div class="content">Single-Sign-On (SSO):
+                <p class="body">Requiring the user to identify and authenticate only once to acheive access to all
+                    authorized services within a network. In the past, every time a user needed access to a resource,
+                    that resource was required to authenticate the user before authorizing the access.
+                </p>
+            </div>
+            <div class="content">Identity Federation:
+                <p class="body">SSO method used in organizatoins with multiple networks that allows authenticated users
+                    to sign on once and receive access to authorized resources across all of the organization's
+                    networks.
+                </p>
+            </div>
+            <div class="content">Transitive Trust Authentication:
+                <p class="body">The process of authenticating an entity based on that entity already being authenticated
+                    by a security entity that is trusted. For example, X is authenticated by organization T, but is
+                    requesting authentication from organization A (A doesn't know X). Since Organization A trusts the
+                    security of organization T, A will authenticate X automatically.
+                </p>
+            </div>
+            <div class="content">Access Control:
+                <p class="body">The process of establishing specifically who or what can be authenticated and how that
+                    authentication will be done before authorization is granted to resources.
+                </p>
+            </div>
+            <div class="content">Implicit Deny:
+                <p class="body">All access is automatically denied until the authentication process has been completed.
+                </p>
+            </div>
+            <div class="content">Trusted OS:
+                <p class="body">Used to denote an OS that uses multiple layers of security (authentication and
+                    authorizatoin) before access is granted to resources on the system.
+                </p>
+            </div>
+
         </div>
 
         <a href="#topic">Topics</a>
@@ -3406,18 +3519,116 @@
             <a id="securityControlsForAccountManagement"></a>
             <h3> Security Controls for Account Management</h3>
         </div>
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Authentication Concepts:
+            <div class="content">Hashing:
+                <p class="body">A common method of authentication involves creating a hased value of the information.
+                    Hashing is a cryptographic process that used an algorithm to derive a set value (the hashed value)
+                    from data and a secret key. The hash can be used to verify that data is coming from where it is
+                    supposed to and that is has not been intercepted or changed in transit -providing both
+                    authentication and an integrity check at the same time. The most popular hashing algorithms are MDS
+                    (message-digest-algorithm) and SHA-1 (Secure Hash Algorithm). Of the two, SHA-1 is the more secure.
+                </p>
+            </div>
+            <div class="content">HMAC (Hashed-Based-Message-Authentication-Code):
+                <p class="body">A secret key -in which both parties have the secret key -is combined with an algorithm
+                    to create the message authentication code (MAC). The MAC is actually the resulting hashed value.
+                </p>
+            </div>
+            <div class="content">HOTP (HMAC-Based One-Time Password):
+                <p class="body">A HMAC-based algorithm is used to create the password that is used for authentication
+                    purposes. Often used by authentication servers.
+                </p>
+            </div>
+            <div class="content">TOTP (Time-Based One-Time Password):
+                <p class="body">An authentication process for creating passwords based on the current time. An algorithm
+                    is combined with a shared secret key and the current time to generate a one time password; it is a
+                    type of HOTP. Commonlly used with security tokens that are used for two factor authentication.
+                </p>
+            </div>
+            <div class="content">PAP (Password Authentication Protocol):
+                <p class="body">When logging in to a network resource, the user or device is reauired to supply a
+                    username and password. The username and password are sent in clear text format, so this method is
+                    considered unsecure and should only be used as a last resort.
+                </p>
+            </div>
+            <div class="content">CHAP (Challenge Handshake Authentication Protocol):
+                <p class="body">When logging in to a network resource, the user or device is challenged to supply a
+                    username and secret password and it authenticates through a three-way handshake process. The
+                    resource issues a challenge- what is the hashed value of the username and secret password (the
+                    HMAC)? The user's device sends the hashed value to the resource device. The resource evaluates the
+                    hashed value and either accepts or rejects the connection.
+                </p>
+            </div>
+            <div class="content">Token:
+                <p class="body">Utilizes a TOTP (usually generated every 30 to 60 seconds) to authenticate users vie
+                    two-factor authentication. May be hardware based (e.g., attached to a key fob). May be software
+                    based (e.g., an app on a smartpone).
+                </p>
+            </div>
+            <div class="content">Smartcard:
+                <p class="body">Utilizes a card -usually credit card sized - that has an embedded circuit and a PIN to
+                    provide two-factor authentication.
+                </p>
+            </div>
+            <div class="content">Common Access Card (CAC):
+                <p class="body">A type of smartcard issued by the U.S military that is used for identificaiton and
+                    authentication purposes. Is used to authenticate users on military networks. Is used to encrypt and
+                    digitally sign electronic messages.
                 </p>
             </div>
         </div>
 
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Authorization Concepts:
+            <div class="content">Separation of Duties:
+                <p class="body">The process of taking a critical organizational task and separating it into smaller
+                    jobs. No one person is allowed (authorized) to perform all of the duties that make up the task
+                    -reducing the risks that can arise from a malicious employee.
+                </p>
+            </div>
+            <div class="content">Principle of Least Privilege:
+                <p class="body">Only granting the minimum amount of rights and privileges (authorization) that are
+                    required from employees to perform their jobs. Reduces the risks associated with either a malicious
+                    employee or a compromised user account.
+                </p>
+            </div>
+            <div class="content">Time of Day Restrictions:
+                <p class="body">Establishing technological controls that limit what actions may be taken base on time
+                    (e.g., preventing employees from logging on to the network outside of operating hours).
+                </p>
+            </div>
+            <div class="content">Rule-Based Access Control (RBAC):
+                <p class="body">The creation of rules within a system that either allow or disallow authorization to
+                    perform actions based on the rule.
+                </p>
+            </div>
+            <div class="content">ACL (Access Control List):
+                <p class="body">A type of RBAC implementation tha can be used for authorization purposes -typically in
+                    the form of a list of rules. The list is typically examined from top to bottom; once a rule is
+                    matched, the corresponding action is taken, if no rule is matched, the typical response is to deny
+                    authorization.
+                </p>
+            </div>
+            <div class="content">Role-Based Access Control(Also Called RBAC):
+                <p class="body">A process of creating authorization levels based ont he role (e.g., user group) that a
+                    person fufulls within an organization. Different roles will have different authorization levels,
+                    allowing the people who fill those roles to perform different duties. It is most often implemented
+                    using the principle of least priviledge.
+                </p>
+            </div>
+            <div class="content">Discretionary Access Control (DAC):
+                <p class="body">A technological control that is used to determine authorization to resources based on a
+                    specific list -the discretionary access control list (DACL). The DACL is a listing of users and
+                    groups that are granted access(authorization) to resources. The DACL will also determine the amount
+                    of access (what actions can be taken based on permisssions) that the user of group as to the
+                    resource.
+                </p>
+            </div>
+            <div class="content">Mandatory Access Control (MAC):
+                <p class="body">An access control model in which each individual (known as a subject) is assigned to a
+                    clearance level (e.g., top secret or confidential). Authorization to resoures is based on teh
+                    resource's classification (e.g., top secret or confidential). The subject is usually granted
+                    automatic authorization for resources that fall below their clearance level (e.g., a top secret
+                    clearance will always be able to access resources classified as seecret.)
                 </p>
             </div>
         </div>
