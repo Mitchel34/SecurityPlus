@@ -3641,21 +3641,186 @@
             <a id="introductionToCryptography"></a>
             <h3> Introduction to Cryptopgraphy</h3>
         </div>
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Cryptographic Servies
+            <div class="content">Cryptography:
+                <p class="body">The process of deriving a code value from a set of data -taking a clear text message and
+                    creating a ciphertext message. Also, the process of decoding the cipher text message to abtain the
+                    clear text message. Offers three basic encryption, hashing, and authentication.
+                </p>
+            </div>
+            <div class="content">Encryption Services:
+                <p class="body">The process of taking a clear text message(or set of data) and scambling it through the
+                    use of a cipher - an algorithmic process. Used to sercure messages and data sets against theft or
+                    loss, including its interception while in transit.
+                </p>
+            </div>
+            <div class="content">Hashing Services:
+                <p class="body">The process of taking a set of data and using an algorithmic process to generate a value
+                    (known as the hashed value or message digest) that only the original data value can generate. The
+                    hased value is generated and is appended to the data and is used to help to ensure the integrity of
+                    the data.
+                </p>
+            </div>
+            <div class="content">Authentication Services:
+                <p class="body">A cyrptographic method used to prove that the creators of messages are in fact who they
+                    say they are. Used for non-repudiatoin purposes - the person sending the message, once
+                    authenticated, cannot claim that the message did not come from him or her. Usually achieveßd through
+                    the use of digital signatures.
                 </p>
             </div>
         </div>
-
-        <div class="subTopic">
-            <div class="content">
-                <p class="body">
-
+        <div class="subTopic">Encryption Basics
+            <div class="content">Encryption Algorithms:
+                <p class="body">Encryption Algorithms work by using a key to scramble the data (or message), so that if
+                    the data is intercepted, it can't be read. To unscramble the data, the process is reversed.
+                    Encryption algorithms are either symmetrical or asymmetrical in nature. With symmetrical encryption
+                    algorithms, both sides of the communivation use the same key to encrypt and decrypt the data. With
+                    asymmetrical encryption, one key is used to encrypt tthe data and a different key is used to decrypt
+                    the data(the key that encrypts the data cannot be used to decrypt it). Asymmetrical encryption is
+                    more secure, but is also requires more management and computing resources.
+                </p>
+            </div>
+            <div class="content">Encryption Key Exchange:
+                <p class="body">In order for encryption to function between different entities, the proper keys must be
+                    used (e.g., exchanged between the communicating parties). The key exchange may occur in-band --as
+                    part of the communication session. The Key exchange may occur out-of-band outside of the data
+                    commincation channel (e.g., sharing the encryption key over the phone, then sending encrypted data
+                    over the internet).
+                </p>
+            </div>
+            <div class="content">Key Types:
+                <p class="body">Symmetrical encryption key types. Preshared key (PSK): the encryption key is shared
+                    before communication session starts -out-of-band key exchange (a PSK can also be called a secret key
+                    or private key). Session key: a random key that is generated during the communication session -
+                    in-band key exchange. Asymmetrical encryption key type: Uses a public key and a private key sytem
+                    referred to as public key infrastructure (PKI) to manage the keys -in-band key exchange.
+                </p>
+            </div>
+            <div class="content">Stream Cipher:
+                <p class="body">The encryption occurs one bit at a time. The encryption process is fast and, if an error
+                    occurs, it will usually only affect a single bit.
+                </p>
+            </div>
+            <div class="content">Block Cipher:
+                <p class="body">The encryption tkaess place on predetermined blocks of data (e.g., 64-bits at a time).
+                    The encryption process is slower and more error prone bit is considered to bemore secure than the
+                    stream type method.
+                </p>
+            </div>
+            <div class="content">Steganography:
+                <p class="body">The process of encoding (or concealing) data within a graphic file. The person receiving
+                    the graphic file must use steganography software to read the secured data. Can be used to place an
+                    encoded message on a graphic image on a website that the recipient can retrieve and decode.
+                </p>
+            </div>
+            <div class="content">Transportation Encryption:
+                <p class="body">It may be vital that certain information flowing across public networks (e.g., the
+                    internet) be kept secure during the transportation process. It may also be wise to proved security
+                    when using communication channels on private networks. Specific protocols have been developed to
+                    help secure communication channels.
+                </p>
+            </div>
+            <div class="content">HTTPS (HTTP Secure):
+                <p class="body">Used to encrypt communication between a Web server and a client (utilizes SSL or TLKS to
+                    proved the encryption).
+                </p>
+            </div>
+            <div class="content">SSL/TLS (Secure Socket Layer / Transport Layer Security):
+                <p class="body">Used to encrypt communication channels, usually at the transport layer (Layer 4) of the
+                    Open Systems Interconnection Model.
+                </p>
+            </div>
+            <div class="content">S/MIME (Secure Multipurpose Internet Mail Extension):
+                <p class="body">Used to encrypt email messages.
+                </p>
+            </div>
+            <div class="content">IPsec (Internet Protocol Security):
+                <p class="body">A suite of protocols that are used to authenticate users and encrypt the communication
+                    channel.
                 </p>
             </div>
         </div>
+        <div class="subTopic">Hashing Basics:
+            <div class="content">Hashing:
+                <p class="body">The idea behind hashing is to create a method of easily verifying the integrity (or
+                    authenticity) of a set of data. The process involves using an algorithm on the data to create a
+                    unique value that can be used to verify the data set. This value is known as the hased value (or
+                    message digest). No matter how many times the data set is run through the hashhing algorithm, the
+                    same hased value is derived (as long as the same algorithm is used). The messge digest can also be
+                    known as one-way hashed value. This is because it is impossible to take a hashed value and determine
+                    what the data is -helping to keep the data secure.
+                </p>
+            </div>
+            <div class="content">Hashing Concepts:
+                <p class="body">Hashing algorithms do not work on the header of a file. No matter how many times the
+                    header of the file changes (e.g., changing the name of a file), the hashed value of the data remains
+                    the same. The hashed value returned is a fixed length that depends on which algorithm is used. A
+                    specific algorithm will always generate the same size has. It is theoretically possisble to recreate
+                    a hashed value by running enough data through the hashing algorithm. When two hased values are the
+                    same, it is called a collision. This is the concept behind a birthday attack.
+                </p>
+            </div>
+            <div class="content">HMAC (Hash-Based Message Authentication Code):
+                <p class="body">The process of using a secret key (a data value only known to the communicating parties)
+                    combined with the data set to derive the hased value. Provides an authentication check - verifying
+                    the identity of the sender - as well as an integrity check of the data.
+                </p>
+            </div>
+            <div class="content">Common Hashhing Alogorithms:
+                <p class="body">MD(Message Digest): created by Ron Rivest. MD5 is the current stander used and always
+                    returns a 128-bit hashed value.
+                </p>
+                <p class="body">SHA (Secure Hash Algorithm) created by the NSA. SHA-1 is the most popular of the
+                    versions of SHA and returns a 160-bit hased value. SHA-256 is a newer version that returns a 256-bit
+                    hashed value. SHA-512 is also a newer version that returns a 512-bit hashed value.
+                </p>
+            </div>
+
+
+        </div>
+        <div class="subTopic">Additional Cryptography Topics:
+            <div class="content">Key Escrow
+                <p class="body">The process of storing or giving encryption keys to a third party; the third party can
+                    then use the keys to decrypt any messages that use those keys(in some cases, governmental agencies
+                    have required the turning over of encryption keys to aid in investigations). Highly controversial.
+                </p>
+            </div>
+            <div class="content">Ephemeral Key:
+                <p class="body">A temporary key that is used to encrypt a single message within a communication channel.
+                    Reduces the chances that a hacker will acquire a key set and be able to decrypt the messages.
+                </p>
+            </div>
+            <div class="content">Perfect Forward Secrecy:
+                <p class="body">A process that generates a random public key (ephemeral key) for each session, so that
+                    the private key exchange can be kept secure.
+                </p>
+            </div>
+            <div class="content">Digital Signature:
+                <p class="body">Created to digitally sign messages in order to prove the integrity of the sender. A
+                    message digest is created from a set of data then encrypted with the sender's private key. The
+                    receiver decrpts the hased value with the sneder's public key and then verifies the hased values.
+                    Also provides a means of non-repudiation - the sender can't deny that he or she is the entity that
+                    sent the message.
+                </p>
+            </div>
+            <div class="content">Elliptic Curve:
+                <p class="body">A newer asymmetrical encryption algorithm that employs Diffie-Hellman for the exchange
+                    of keys and the Digital Signature Algorithm (DSA) for the digital signature.
+                </p>
+            </div>
+            <div class="content">Quantum Cryptography:
+                <p class="body">Encryption standard that is used with the fiber optic communication to determine if the message has been intercepted. RElies upon the fact that any interaction with the photons in transit will cause the state of the photons to change.
+
+                </p> 
+            </div>
+
+
+
+
+
+        </div>
+
+
 
         <a href="#topic">Topics</a>
     </div>
